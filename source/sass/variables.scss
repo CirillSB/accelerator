@@ -13,6 +13,7 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $AliceBlue:                         #f8fdff;
 $BlackPearl:                        #041827;
 $DeepSkyBlue:                       #00b2ff;
+$AthensGray:                        #f2f5f7;
 
 // Gradient
 
@@ -26,10 +27,10 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-PTMono:                    "PTMono-Regular", "Arial", sans-serif;
-$ff-Roboto:                    "Roboto-Medium", "Arial", sans-serif;
-$ff-Regular:                   "RobotoCondensed-Regular", "Arial", sans-serif;
-$ff-Bold:                      "RobotoCondensed-Bold", "Arial", sans-serif;
+$ff-PTMono:                     "PTMono-Regular", "Arial", sans-serif;
+$ff-RMedium:                    "Roboto-Medium", "Arial", sans-serif;
+$ff-RRegular:                   "RobotoCondensed-Regular", "Arial", sans-serif;
+$ff-RBold:                      "RobotoCondensed-Bold", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

@@ -1,0 +1,57 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  min-height: 120px;
+  background: linear-gradient($BlackPearl 100px, $BlackPearl, transparent);
+
+  @include vp-1023 {
+    min-height: 100px;
+    background: linear-gradient($BlackPearl 70px, $BlackPearl, transparent);
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+    background: linear-gradient($BlackPearl 50px, $BlackPearl, transparent);
+  }
+}
+
+.main-header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 3% 45px 0;
+
+  @include vp-1023 {
+    padding: 20px 20px 25px 0;
+  }
+
+  @include vp-1023 {
+    padding: 10px 0 15px 0;
+  }
+}
+
+.main-header__logo-link {
+  color: $AthensGray;
+}
+
+.main-header__navigation {
+  flex-grow: 1;
+}
+
+.main-header__link {
+  font-family: $ff-RBold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $AthensGray;
+  border: 1px solid $AthensGray;
+  border-radius: 3px;
+  padding: 10px 15px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}

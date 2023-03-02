@@ -1,0 +1,21 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1023 {
+    justify-content: flex-end;
+  }
+}
+
+.navigation__item {
+  @include vp-1023 {
+    margin-right: 20px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
