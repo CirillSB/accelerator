@@ -2,16 +2,16 @@
   position: fixed;
   width: 100%;
   min-height: 120px;
-  background: linear-gradient($BlackPearl 100px, $BlackPearl, transparent);
+  background: $header-dradient-desktop;
 
   @include vp-1023 {
     min-height: 100px;
-    background: linear-gradient($BlackPearl 70px, $BlackPearl, transparent);
+    background: $header-dradient-tablet;
   }
 
   @include vp-767 {
     min-height: 70px;
-    background: linear-gradient($BlackPearl 50px, $BlackPearl, transparent);
+    background: $header-dradient-mobile;
   }
 }
 
@@ -20,19 +20,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 3% 45px 0;
+  padding: 27px 5% 33px 0;
 
   @include vp-1023 {
     padding: 20px 20px 25px 0;
   }
 
-  @include vp-1023 {
-    padding: 10px 0 15px 0;
+  @include vp-767 {
+    padding: 15px 0 20px;
   }
-}
-
-.main-header__logo-link {
-  color: $AthensGray;
 }
 
 .main-header__navigation {
@@ -40,7 +36,7 @@
 }
 
 .main-header__link {
-  font-family: $ff-RBold;
+  font-family: $ff-Condensed;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

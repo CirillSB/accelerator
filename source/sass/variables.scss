@@ -14,10 +14,14 @@ $AliceBlue:                         #f8fdff;
 $BlackPearl:                        #041827;
 $DeepSkyBlue:                       #00b2ff;
 $AthensGray:                        #f2f5f7;
+$DeepSkyBlue:                       #00b2ff;
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$header-dradient-desktop:           linear-gradient($BlackPearl 100px, $BlackPearl, transparent);
+$header-dradient-tablet:            linear-gradient($BlackPearl 70px, $BlackPearl, transparent);
+$header-dradient-mobile:            linear-gradient($BlackPearl 50px, $BlackPearl, transparent);
 
 // Typography
 // ---------------------------------
@@ -27,10 +31,10 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-PTMono:                     "PTMono-Regular", "Arial", sans-serif;
-$ff-RMedium:                    "Roboto-Medium", "Arial", sans-serif;
-$ff-RRegular:                   "RobotoCondensed-Regular", "Arial", sans-serif;
-$ff-RBold:                      "RobotoCondensed-Bold", "Arial", sans-serif;
+$ff-PTMono:                     "PTMono", "Arial", sans-serif;
+$ff-Roboto:                     "Roboto", "Arial", sans-serif;
+$ff-Condensed:                  "Roboto Condensed", "Arial", sans-serif;
+// $ff-RBold:                      "RobotoCondensed-Bold", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

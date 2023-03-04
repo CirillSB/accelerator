@@ -1,0 +1,26 @@
+.contacts {
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.contacts__phones {
+  position: static;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    padding-bottom: 20px;
+  }
+}

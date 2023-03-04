@@ -1,23 +1,26 @@
 .logo-link {
   display: flex;
   align-items: center;
+  color: $AthensGray;
 }
 
 .logo-link__text {
-  font-family: $ff-RBold;
+  font-family: $ff-Condensed;
   font-weight: 700;
   font-size: 25px;
   line-height: 29px;
   margin: 0 0 0 15px;
 
-  @include vp-767 {
-    display: none;
+  &--hidden {
+    @include vp-767 {
+      display: none;
+    }
   }
 }
 
 .logo-link__span {
   display: block;
-  font-family: $ff-RMedium;
+  font-family: $ff-Roboto;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
