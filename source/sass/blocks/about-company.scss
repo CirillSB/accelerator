@@ -1,0 +1,109 @@
+.about-company {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 95px;
+
+  @include vp-1023 {
+    padding-bottom: 84px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 79px;
+  }
+}
+
+.about-company__picture-wrapper {
+  flex-shrink: 0;
+  width: 150px;
+  margin-right: 8%;
+
+  @include vp-1023 {
+    margin-right: 4%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about-company__image {
+  display: inline-block;
+  height: 100%;
+}
+
+.about-company__inner {
+  flex-shrink: 1;
+}
+
+.about-company__title {
+  font-family: $ff-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $BlackPearl;
+  margin: 0 0 15px;
+
+  @include vp-1023 {
+    margin: 0 0 8px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+    margin: 0 0 11px;
+  }
+}
+
+.about-company__text-wrapper {
+  margin-bottom: 40px;
+
+  @include vp-1023 {
+    margin-bottom: 17px;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 13px;
+  }
+}
+
+.about-company__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: $BlackPearl;
+  margin: 0 0 20px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+.about-company__button {
+  display: inline-block;
+  font-family: $ff-title;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $DeepSkyBlue;
+  padding: 13px 51px;
+  border: 1px solid $DeepSkyBlue;
+  border-radius: 3px;
+
+  @include vp-1023 {
+    padding: 13px 48px;
+  }
+
+  @include vp-767 {
+    padding: 9px 40px;
+  }
+}

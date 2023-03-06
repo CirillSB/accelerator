@@ -15,6 +15,7 @@ $BlackPearl:                        #041827;
 $DeepSkyBlue:                       #00b2ff;
 $AthensGray:                        #f2f5f7;
 $DeepSkyBlue:                       #00b2ff;
+$Whisper:                           #ebebeb;
 
 // Gradient
 
@@ -31,10 +32,9 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-PTMono:                     "PTMono", "Arial", sans-serif;
-$ff-Roboto:                     "Roboto", "Arial", sans-serif;
-$ff-Condensed:                  "Roboto Condensed", "Arial", sans-serif;
-// $ff-RBold:                      "RobotoCondensed-Bold", "Arial", sans-serif;
+$ff-text:                     "PTMono", "Arial", sans-serif;
+$ff-additional:                     "Roboto", "Arial", sans-serif;
+$ff-title:                  "Roboto Condensed", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

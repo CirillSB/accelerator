@@ -1,0 +1,82 @@
+.advantage {
+  border-left: 5px solid $DeepSkyBlue;
+  border-right: 1px solid $Whisper;
+  border-top: 1px solid $Whisper;
+  border-bottom: 1px solid $Whisper;
+  background-color: $AliceBlue;
+  color: $DeepSkyBlue;
+  fill: $DeepSkyBlue;
+  padding: 40px;
+
+  @include vp-1023 {
+    padding: 40px 40px 28px;
+  }
+
+  @include vp-767 {
+    padding: 29px 24px 35px;
+  }
+
+  .advantage__text {
+    color: $BlackPearl;
+  }
+
+  &:hover {
+    background-color: $DeepSkyBlue;
+    color: $AthensGray;
+    fill: $AthensGray;
+
+    .advantage__text {
+      color: inherit;
+    }
+  }
+}
+
+.advantage__svg {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 13px;
+
+  @include vp-1023 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantage__title {
+  font-family: $ff-title;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 15px;
+  padding: 0;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+    line-height: 32px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}
+
+.advantage__text {
+  font-family: $ff-text;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 135%;
+    width: 97%;
+    min-height: 140px;
+  }
+}
