@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 120px;
   background: $header-dradient-desktop;
+  z-index: 100;
 
   @include vp-1023 {
     min-height: 100px;
@@ -46,8 +47,4 @@
   border: 1px solid $AthensGray;
   border-radius: 3px;
   padding: 10px 15px;
-
-  @include vp-1023 {
-    display: none;
-  }
 }

@@ -7,16 +7,8 @@
   color: $AthensGray;
   display: flex;
   align-items: center;
-
-  @include vp-1023 {
-    // padding: 10px;
-  }
 }
 
 .contact-link__span {
   margin-left: 15px;
-
-  @include vp-1023 {
-    display: none;
-  }
 }

@@ -1,0 +1,5 @@
+.visible-only-desktop {
+  @include vp-1023 {
+    display: none;
+  }
+}

@@ -74,6 +74,13 @@
   padding: 18px 25px;
   border-radius: 3px;
   margin: 0;
+  font-family: $ff-title;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $AthensGray;
 
   @include vp-1023 {
     margin-left: 7%;
@@ -86,34 +93,7 @@
     text-align: center;
     width: 100%;
     padding: 8px 25px;
-  }
-}
-
-.promo__link-span {
-  font-family: $ff-title;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $AthensGray;
-
-  @include vp-767 {
     font-size: 14px;
     line-height: 16px;
-  }
-
-  &--desktop {
-    @include vp-767 {
-      display: none;
-    }
-  }
-
-  &--mobile {
-    display: none;
-
-    @include vp-767 {
-      display: inline-block;
-    }
   }
 }

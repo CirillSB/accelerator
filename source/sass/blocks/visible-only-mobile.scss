@@ -1,0 +1,7 @@
+.visible-only-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: inline-block;
+  }
+}
