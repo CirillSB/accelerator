@@ -1610,11 +1610,6 @@ button,
   color: #f2f5f7;
 }
 
-.logo {
-  width: 55px;
-  height: 55px;
-}
-
 .advantages-list {
   display: -ms-grid;
   display: grid;
@@ -1785,18 +1780,6 @@ button,
   display: none;
 }
 
-[data-offer="1"] {
-  background-image: url("../img/card-background-1.webp");
-}
-
-[data-offer="2"] {
-  background-image: url("../img/card-background-2.webp");
-}
-
-[data-offer="3"] {
-  background-image: url("../img/card-background-3.webp");
-}
-
 .goods-services {
   background-color: #041827;
   padding: 70px 0 140px;
@@ -1825,25 +1808,23 @@ button,
 
 .goods-services__item {
   width: 29%;
-  min-height: 650px;
-  padding: 50px 40px;
 }
 
 .offer {
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .offer__title {
+  position: absolute;
+  top: 50px;
+  left: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
   margin: 0;
-  width: 90%;
+  width: 49%;
 }
 
 .offer__link {
@@ -1868,6 +1849,10 @@ button,
 .offer__svg {
   width: 5px;
   height: 10px;
+}
+
+.offer__image {
+  width: 100%;
 }
 
 .visible-only-mobile {
@@ -2097,9 +2082,7 @@ button,
 
   .goods-services__item {
     width: 100%;
-    min-height: 250px;
     margin-bottom: 30px;
-    padding: 40px 45px;
   }
 
   .goods-services__item:last-child {
@@ -2108,6 +2091,8 @@ button,
 
   .offer__title {
     width: 25.5%;
+    top: 40px;
+    left: 45px;
   }
 
   .offer__link {
@@ -2284,11 +2269,6 @@ button,
     line-height: 16px;
   }
 
-  .logo--changeable {
-    width: 35px;
-    height: 35px;
-  }
-
   .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2368,12 +2348,10 @@ button,
     line-height: 39px;
   }
 
-  .goods-services__item {
-    padding: 30px;
-  }
-
   .offer__title {
     width: 71%;
+    top: 30px;
+    left: 30px;
   }
 
   .offer__link {

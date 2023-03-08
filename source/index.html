@@ -24,11 +24,14 @@
       <div class="container">
         <div class="main-header__inner">
           <a class="logo-link" href="#">
-            <svg class="logo logo--changeable">
+            <svg class="logo visible-except-mobile" width="55" height="55">
               <use xlink:href="img/sprite.svg#circuit"></use>
             </svg>
+            <svg class="logo visible-only-mobile" width="35" height="35">
+              <use xlink:href="img/sprite.svg#circuit-mobile"></use>
+            </svg>
             <p class="logo-link__text visible-except-mobile">
-              Smart Device <br>
+              Smart Device
               <span class="logo-link__span">
                 умные технологии
               </span>
@@ -41,6 +44,9 @@
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#emailsvg"></use>
                   </svg>
+                  <span class="visually-hidden">
+                    Наша почта
+                  </span>
                   <span class="contact-link__span visible-only-desktop">
                     info@sd.ru
                   </span>
@@ -51,6 +57,9 @@
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#call"></use>
                   </svg>
+                  <span class="visually-hidden">
+                    Наш телефон
+                  </span>
                   <span class="contact-link__span visible-only-desktop">
                     +7 (495) 000 52 52
                   </span>
@@ -186,31 +195,64 @@
             </span>
           </h2>
           <div class="goods-services__inner">
-            <section class="goods-services__item offer" data-offer="1">
+            <section class="goods-services__item offer">
+              <picture class="offer__picture">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop1@1x.webp 1x, img/card-desktop1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet1@1x.webp 1x, img/card-tablet1@2x.webp 2x">
+                <source type="image/webp" srcset="img/card-mobile1@1x.webp 1x, img/card-mobile1@2x.webp 2x">
+                <source media="(min-width: 1024px)" srcset="img/card-desktop1@1x.jpg 1x, img/card-desktop1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/card-tablet1@1x.jpg 1x, img/card-tablet1@2x.jpg 2x">
+                <img class="offer__image" src="img/card-mobile1@1x.jpg" srcset="img/card-mobile1@2x.jpg 2x" alt="Фрагмент печатной платы.">
+              </picture>
               <h3 class="offer__title">
                 Производство печатных плат
               </h3>
               <a class="offer__link" href="#">
+                <span class="visually-hidden">
+                  Узнать подробности
+                </span>
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
               </a>
             </section>
-            <section class="goods-services__item offer" data-offer="2">
+            <section class="goods-services__item offer">
+              <picture class="offer__picture">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop2@1x.webp 1x, img/card-desktop2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet2@1x.webp 1x, img/card-tablet2@2x.webp 2x">
+                <source type="image/webp" srcset="img/card-mobile2@1x.webp 1x, img/card-mobile2@2x.webp 2x">
+                <source media="(min-width: 1024px)" srcset="img/card-desktop2@1x.jpg 1x, img/card-desktop2@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/card-tablet2@1x.jpg 1x, img/card-tablet2@2x.jpg 2x">
+                <img class="offer__image" src="img/card-mobile2@1x.jpg" srcset="img/card-mobile2@2x.jpg 2x" alt="Фрагмент печатной платы.">
+              </picture>
               <h3 class="offer__title">
                 Монтаж печатных плат
               </h3>
               <a class="offer__link" href="#">
+                <span class="visually-hidden">
+                  Узнать подробности
+                </span>
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
               </a>
             </section>
-            <section class="goods-services__item offer" data-offer="3">
+            <section class="goods-services__item offer">
+              <picture class="offer__picture">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop3@1x.webp 1x, img/card-desktop3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet3@1x.webp 1x, img/card-tablet3@2x.webp 2x">
+                <source type="image/webp" srcset="img/card-mobile3@1x.webp 1x, img/card-mobile3@2x.webp 2x">
+                <source media="(min-width: 1024px)" srcset="img/card-desktop3@1x.jpg 1x, img/card-desktop3@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/card-tablet3@1x.jpg 1x, img/card-tablet3@2x.jpg 2x">
+                <img class="offer__image" src="img/card-mobile3@1x.jpg" srcset="img/card-mobile3@2x.jpg 2x" alt="Фрагмент печатной платы.">
+              </picture>
               <h3 class="offer__title">
                 Комплектующие для светотехники
               </h3>
               <a class="offer__link" href="#">
+                <span class="visually-hidden">
+                  Узнать подробности
+                </span>
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -225,7 +267,7 @@
         <div class="main-footer__inner">
           <div class="main-footer__links">
             <a class="logo-link" href="#">
-              <svg class="logo">
+              <svg class="logo" width="55" height="55">
                 <use xlink:href="img/sprite.svg#circuit"></use>
               </svg>
               <p class="logo-link__text">
@@ -238,6 +280,9 @@
             <ul class="social">
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <span class="visually-hidden">
+                    Мы в однокласниках
+                  </span>
                   <svg class="social__img" width="30" height="30">
                     <use xlink:href="img/sprite.svg#ok"></use>
                   </svg>
@@ -245,6 +290,9 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <span class="visually-hidden">
+                    Мы в вконтакте
+                  </span>
                   <svg class="social__img" width="30" height="30">
                     <use xlink:href="img/sprite.svg#vk"></use>
                   </svg>
@@ -252,6 +300,9 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
+                  <span class="visually-hidden">
+                    Мы в пинтерест
+                  </span>
                   <svg class="social__img" width="30" height="30">
                     <use xlink:href="img/sprite.svg#pinterest"></use>
                   </svg>
@@ -316,16 +367,25 @@
               <ul class="contacts__phones">
                 <li class="contacts__phone">
                   <a class="main-footer__link main-footer__link--phone" href="tel:+74955894050">
+                    <span class="visually-hidden">
+                      Наш контактный телефон
+                    </span>
                     +7 (495) 589-40-50
                   </a>
                 </li>
                 <li class="contacts__phone">
                   <a class="main-footer__link main-footer__link--phone" href="tel:+79253895829">
+                    <span class="visually-hidden">
+                      Наш контактный телефон
+                    </span>
                     +7 (925) 389-58-29
                   </a>
                 </li>
                 <li class="contacts__phone">
                   <a class="main-footer__link main-footer__link--phone" href="tel:+79253647813">
+                    <span class="visually-hidden">
+                      Наш контактный телефон
+                    </span>
                     +7 (925) 364-78-13
                   </a>
                 </li>
