@@ -1,8 +1,9 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
 // import {Form} from './modules/form-validate/form';
-import {showMenu} from './modules/show-menu';
+import { showMenu } from './modules/show-menu';
+import { initModalFeedback } from './modules/init-modal-feedback';
 
 // ---------------------------------
 
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   showMenu();
+  initModalFeedback();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -55,3 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+
+

@@ -1,3 +1,6 @@
+  main {
+    flex-grow: 1;
+  }
 .wrapper {
   position: relative;
 
@@ -10,10 +13,6 @@
   .header,
   .footer {
     flex-shrink: 0;
-  }
-
-  main {
-    flex-grow: 1;
   }
 }
 

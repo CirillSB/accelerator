@@ -67,13 +67,13 @@
               </li>
             </ul>
           </nav>
-          <a class="main-header__link visible-only-desktop" href="#">
+          <a class="main-header__link visible-only-desktop" href="#" data-open-modal>
             Заказать звонок
           </a>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-page">
       <!--       <section class="intro">
         <div class="container">
           <h1>Тестовая страница.</h1>
@@ -94,7 +94,7 @@
           <p class="promo__text">
             производство и монтаж, поставка комплектующих, блоков и модулей
           </p>
-          <a class="promo__link" href="#">
+          <a class="promo__link" href="#ask">
             <span class="promo__link-span visible-except-mobile">
               Получить бесплатную консультацию
             </span>
@@ -195,7 +195,7 @@
             </span>
           </h2>
           <div class="goods-services__inner">
-            <section class="goods-services__item offer">
+            <a class="goods-services__link offer" href="#">
               <picture class="offer__picture">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop1@1x.webp 1x, img/card-desktop1@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet1@1x.webp 1x, img/card-tablet1@2x.webp 2x">
@@ -207,16 +207,13 @@
               <h3 class="offer__title">
                 Производство печатных плат
               </h3>
-              <a class="offer__link" href="#">
-                <span class="visually-hidden">
-                  Узнать подробности
-                </span>
+              <span class="offer__span">
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-              </a>
-            </section>
-            <section class="goods-services__item offer">
+              </span>
+            </a>
+            <a class="goods-services__link offer" href="#">
               <picture class="offer__picture">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop2@1x.webp 1x, img/card-desktop2@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet2@1x.webp 1x, img/card-tablet2@2x.webp 2x">
@@ -228,16 +225,13 @@
               <h3 class="offer__title">
                 Монтаж печатных плат
               </h3>
-              <a class="offer__link" href="#">
-                <span class="visually-hidden">
-                  Узнать подробности
-                </span>
+              <span class="offer__span">
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-              </a>
-            </section>
-            <section class="goods-services__item offer">
+              </span>
+            </a>
+            <a class="goods-services__link offer" href="#">
               <picture class="offer__picture">
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/card-desktop3@1x.webp 1x, img/card-desktop3@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/card-tablet3@1x.webp 1x, img/card-tablet3@2x.webp 2x">
@@ -249,16 +243,43 @@
               <h3 class="offer__title">
                 Комплектующие для светотехники
               </h3>
-              <a class="offer__link" href="#">
-                <span class="visually-hidden">
-                  Узнать подробности
-                </span>
+              <span class="offer__span">
                 <svg class="offer__svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-              </a>
-            </section>
+              </span>
+            </a>
           </div>
+        </div>
+      </section>
+      <section class="ask-questions" id="ask">
+
+        <div class="ask-questions__banner visible-only-desktop">
+          <picture class="ask-questions__picture">
+            <source type="image/webp" srcset="img/airplane-model@1x.webp 1x, img/airplane-model@2x.webp 2x">
+            <img class="ask-questions__image" src="img/airplane-model@1x.png" srcset="img/airplane-model@2x.png 2x" alt="Макет самолёта.">
+          </picture>
+        </div>
+        <div class="ask-questions__form-wrapper">
+          <h3 class="ask-questions__title">
+            Остались вопросы? Задайте их нам!
+          </h3>
+          <p class="ask-questions__text">
+            Мы проконсультируем Вас бесплатно
+          </p>
+          <form class="main-form" action="#" method="post">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="main-form__input" type="text" name="name" placeholder="Имя" id="name" required>
+            <label class="visually-hidden" for="phone">Ваш номер телефона</label>
+            <input class="main-form__input" type="tel" name="phone" placeholder="Телефон" required>
+            <label class="visually-hidden" for="question">Ваш вопрос</label>
+            <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
+            <button class="main-form__button" type="submit">Задать вопрос</button>
+            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required>
+            <label class="main-form__checkbox-label" for="agreement">
+              Я согласен на обработку персональных данных
+            </label>
+          </form>
         </div>
       </section>
     </main>
@@ -398,7 +419,42 @@
     </footer>
   </div>
   <!-- Модалки -->
+
+
+
   <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+
+        <p class="modal__description">Закажите звонок</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="main-form popup-form" action="#" method="post">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="name" required>
+            <label class="visually-hidden" for="phone">Ваш номер телефона</label>
+            <input class="main-form__input popup-form__inpun" type="tel" name="phone" placeholder="Телефон" required>
+            <label class="visually-hidden" for="question">Ваш вопрос</label>
+            <textarea class="main-form__input popup-form__inpun main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
+            <button class="main-form__button popup-form__button" type="submit">отправить</button>
+            <input class="main-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required>
+            <label class="main-form__checkbox-label" for="popup-agreement">
+              Я согласен на обработку персональных данных
+            </label>
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!--   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -410,7 +466,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>

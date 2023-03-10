@@ -45,6 +45,15 @@
     }
   }
 
+  &__description {
+    font-family: $ff-title;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color: $color-default-white;
+    margin: 0 0 15px 0;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -58,11 +67,9 @@
 
   &__content {
     position: relative;
-
     width: 600px;
     padding: 40px;
-
-    background-color: $color-default-white;
+    background-color: $DeepSkyBlue;
 
     @include vp-767 {
       width: 100%;

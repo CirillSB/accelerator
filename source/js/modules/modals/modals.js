@@ -1,5 +1,5 @@
-import {ScrollLock} from '../../utils/scroll-lock';
-import {FocusLock} from '../../utils/focus-lock';
+import { ScrollLock } from '../../utils/scroll-lock';
+import { FocusLock } from '../../utils/focus-lock';
 
 export class Modals {
   constructor(settings = {}) {
@@ -41,29 +41,29 @@ export class Modals {
     }
 
     this._preventDefault =
-      typeof this._settings[settingKey].preventDefault === 'boolean'
-        ? this._settings[settingKey].preventDefault
-        : this._settings[this._settingKey].preventDefault;
+      typeof this._settings[settingKey].preventDefault === 'boolean' ?
+      this._settings[settingKey].preventDefault :
+      this._settings[this._settingKey].preventDefault;
     this._stopPlay =
-      typeof this._settings[settingKey].stopPlay === 'boolean'
-        ? this._settings[settingKey].stopPlay
-        : this._settings[this._settingKey].stopPlay;
+      typeof this._settings[settingKey].stopPlay === 'boolean' ?
+      this._settings[settingKey].stopPlay :
+      this._settings[this._settingKey].stopPlay;
     this._lockFocus =
-      typeof this._settings[settingKey].lockFocus === 'boolean'
-        ? this._settings[settingKey].lockFocus
-        : this._settings[this._settingKey].lockFocus;
+      typeof this._settings[settingKey].lockFocus === 'boolean' ?
+      this._settings[settingKey].lockFocus :
+      this._settings[this._settingKey].lockFocus;
     this._startFocus =
-      typeof this._settings[settingKey].startFocus === 'boolean'
-        ? this._settings[settingKey].startFocus
-        : this._settings[this._settingKey].startFocus;
+      typeof this._settings[settingKey].startFocus === 'boolean' ?
+      this._settings[settingKey].startFocus :
+      this._settings[this._settingKey].startFocus;
     this._focusBack =
-      typeof this._settings[settingKey].lockFocus === 'boolean'
-        ? this._settings[settingKey].focusBack
-        : this._settings[this._settingKey].focusBack;
+      typeof this._settings[settingKey].lockFocus === 'boolean' ?
+      this._settings[settingKey].focusBack :
+      this._settings[this._settingKey].focusBack;
     this._eventTimeout =
-      typeof this._settings[settingKey].eventTimeout === 'number'
-        ? this._settings[settingKey].eventTimeout
-        : this._settings[this._settingKey].eventTimeout;
+      typeof this._settings[settingKey].eventTimeout === 'number' ?
+      this._settings[settingKey].eventTimeout :
+      this._settings[this._settingKey].eventTimeout;
     this._openCallback = this._settings[settingKey].openCallback || this._settings[this._settingKey].openCallback;
     this._closeCallback = this._settings[settingKey].closeCallback || this._settings[this._settingKey].closeCallback;
   }

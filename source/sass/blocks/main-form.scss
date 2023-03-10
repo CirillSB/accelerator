@@ -1,0 +1,128 @@
+.main-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 30px;
+  grid-row-gap: 25px;
+  width: 30%;
+
+  @include vp-1023 {
+    width: 100%;
+    grid-row-gap: 20px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.main-form__input {
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &::placeholder {
+    font-family: $ff-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+  }
+
+  &--textarea {
+    grid-column: 1 / -1;
+    padding: 22px 15px 47px;
+
+    @include vp-767 {
+      padding: 31px 15px 40px;
+    }
+  }
+}
+
+.main-form__button {
+  background: $BlackPearl;
+  border-radius: 3px;
+  border: none;
+  font-family: $ff-title;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  padding: 15px 25px;
+  margin-top: 10px;
+
+  @include vp-1023 {
+    margin-top: 14px;
+    padding: 13px 0;
+    width: 83%;
+  }
+
+  @include vp-767 {
+    margin: 7px 0 4px;
+    width: 100%;
+  }
+}
+
+.main-form__checkbox-label {
+  position: relative;
+  font-family: $ff-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    padding-top: 20px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+    min-width: 15px;
+    height: 15px;
+    margin-right: 11px;
+  }
+
+  &::after {
+    width: 8px;
+    height: 3px;
+    transform: rotate(-45deg);
+    border-left: 2px solid $color-default-white;
+    border-bottom: 2px solid $color-default-white;
+    position: absolute;
+    top: 46%;
+    left: 4px;
+  }
+}
+
+.main-form__checkbox {
+  appearance: none;
+}
+
+
+.main-form__checkbox:checked + .main-form__checkbox-label::after {
+  content: "";
+}
