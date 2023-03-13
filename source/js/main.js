@@ -1,9 +1,24 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-// import {Form} from './modules/form-validate/form';
-import { showMenu } from './modules/show-menu';
-import { initModalFeedback } from './modules/init-modal-feedback';
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+import {
+  showMenu
+} from './modules/show-menu';
+import {
+  initModalFeedback
+} from './modules/init-modal-feedback';
+import {
+  changeDescriptionVisibility
+} from './modules/change-descriptio-visibility';
+import {
+  setMaskTel
+} from './modules/set-mask-tel';
 
 // ---------------------------------
 
@@ -16,7 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   showMenu();
+  setMaskTel();
   initModalFeedback();
+  changeDescriptionVisibility();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -27,8 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     // ---------------------------------
-
-
   });
 });
 // ---------------------------------
@@ -57,7 +72,3 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
-
-
-
-

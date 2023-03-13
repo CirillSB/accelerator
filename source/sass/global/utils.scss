@@ -1,6 +1,7 @@
-  main {
-    flex-grow: 1;
-  }
+main {
+  flex-grow: 1;
+}
+
 .wrapper {
   position: relative;
 
@@ -15,14 +16,6 @@
     flex-shrink: 0;
   }
 }
-
-// .rouble {
-//   font-family: $ff-rouble;
-//   /* stylelint-disable */
-//   text-transform: lowercase !important;
-//   font-weight: 400 !important;
-//   /* stylelint-enable */
-// }
 
 .visually-hidden {
   position: absolute;

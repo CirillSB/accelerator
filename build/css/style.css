@@ -1570,7 +1570,26 @@ main {
 }
 
 .accordion-pointer {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.accordion-pointer::before,
+.accordion-pointer::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
 }
 
 .promo {
@@ -1789,8 +1808,20 @@ main {
   content: none;
 }
 
-[data-hiding-block=js-hidden] {
+[data-text-visibility-state=js-hidden] {
   display: none;
+}
+
+[data-text-visibility-state=js-visible] {
+  display: block;
+}
+
+[data-visible=js-hidden] {
+  display: none;
+}
+
+[data-visible=js-visible] {
+  display: block;
 }
 
 .goods-services {
@@ -2488,29 +2519,6 @@ main {
     border-bottom: 1px solid #ffffff;
   }
 
-  .accordion-pointer {
-    display: block;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-  }
-
-  .accordion-pointer::before,
-  .accordion-pointer::after {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-  }
-
   .promo__inner {
     width: 84%;
     min-width: 270px;
@@ -2608,6 +2616,14 @@ main {
     padding: 9px 40px;
   }
 
+  [data-hiding-block=js-hidden] {
+    display: none;
+  }
+
+  [data-hiding-block=js-visible] {
+    display: block;
+  }
+
   .goods-services {
     padding: 50px 0 86px;
   }
@@ -2672,6 +2688,10 @@ main {
   .main-form__button {
     margin: 7px 0 4px;
     width: 100%;
+  }
+
+  .main-form__checkbox-label::after {
+    top: 66%;
   }
 
   .ask-questions__form-wrapper {

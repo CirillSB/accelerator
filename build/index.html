@@ -74,15 +74,6 @@
       </div>
     </header>
     <main class="main-page">
-      <!--       <section class="intro">
-        <div class="container">
-          <h1>Тестовая страница.</h1>
-          <p>На данной странице показан пример модальных окон.</p>
-          <p>Перед началом разработки не&nbsp;забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-          <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-        </div>
-      </section> -->
       <h1 class="visually-hidden">
         Сайт комнании Smart Device
       </h1>
@@ -173,9 +164,15 @@
               </p>
               <p class="about-company__text">
                 Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                <span class="about-company__text visible-except-mobile">
-                  Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
-                </span>
+              </p>
+              <p class="about-company__text " data-visible-except-mobile>
+                Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              </p>
+              <p class="about-company__text" data-text-visibility-state>
+                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+              </p>
+              <p class="about-company__text" data-text-visibility-state>
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов
               </p>
             </div>
             <button class="about-company__button" type="button">
@@ -253,7 +250,6 @@
         </div>
       </section>
       <section class="ask-questions" id="ask">
-
         <div class="ask-questions__banner visible-only-desktop">
           <picture class="ask-questions__picture">
             <source type="image/webp" srcset="img/airplane-model@1x.webp 1x, img/airplane-model@2x.webp 2x">
@@ -271,9 +267,9 @@
             <label class="visually-hidden" for="name">Ваше имя</label>
             <input class="main-form__input" type="text" name="name" placeholder="Имя" id="name" required>
             <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-            <input class="main-form__input" type="tel" name="phone" placeholder="Телефон" required>
+            <input class="main-form__input" type="tel" id="phone" name="phone" data-tel-input placeholder="Телефон" required>
             <label class="visually-hidden" for="question">Ваш вопрос</label>
-            <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
+            <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
             <button class="main-form__button" type="submit">Задать вопрос</button>
             <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required>
             <label class="main-form__checkbox-label" for="agreement">
@@ -283,7 +279,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" data-footer>
       <div class="container">
         <div class="main-footer__inner">
           <div class="main-footer__links">
@@ -333,11 +329,11 @@
           </div>
           <span class="border"></span>
           <section class="main-footer__sections sections" data-resizing-block>
-            <h2 class="main-footer__title">
+            <h2 class="main-footer__title" data-resizing-block-button>
               Разделы сайта
-              <span class="accordion-pointer" data-changing-pointer="js-closed"></span>
+              <span class="accordion-pointer visible-only-mobile" data-changing-pointer></span>
             </h2>
-            <ul class="sections__list" data-hiding-block="js-hidden">
+            <ul class="sections__list visible-except-mobile" data-hiding-block>
               <li class="sections__item">
                 <a class="main-footer__link" href="#">
                   О Компании
@@ -377,11 +373,11 @@
           </section>
           <span class="border"></span>
           <section class="main-footer__contacts contacts" data-resizing-block>
-            <h2 class="main-footer__title">
+            <h2 class="main-footer__title" data-resizing-block-button>
               Наш офис
-              <span class="accordion-pointer" data-changing-pointer="js-closed"></span>
+              <span class="accordion-pointer visible-only-mobile" data-changing-pointer></span>
             </h2>
-            <div class="pull-down-list" data-hiding-block="js-hidden">
+            <div class="pull-down-list visible-except-mobile" data-hiding-block>
               <address class="contacts__address">
                 г. Мытищи, Олимпийский проспект, д.10
               </address>
@@ -419,54 +415,32 @@
     </footer>
   </div>
   <!-- Модалки -->
-
-
-
-  <div class="modal modal--preload" data-modal="feedback">
+  <div class="modal modal--preload" id="feedback" data-modal="feedback" tabindex="0">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-
         <p class="modal__description">Закажите звонок</p>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-
         <form class="main-form popup-form" action="#" method="post">
-            <label class="visually-hidden" for="name">Ваше имя</label>
-            <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="name" required>
-            <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-            <input class="main-form__input popup-form__inpun" type="tel" name="phone" placeholder="Телефон" required>
-            <label class="visually-hidden" for="question">Ваш вопрос</label>
-            <textarea class="main-form__input popup-form__inpun main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
-            <button class="main-form__button popup-form__button" type="submit">отправить</button>
-            <input class="main-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required>
-            <label class="main-form__checkbox-label" for="popup-agreement">
-              Я согласен на обработку персональных данных
-            </label>
-          </form>
-
+          <label class="visually-hidden" for="popup-name">Ваше имя</label>
+          <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="popup-name" required >
+          <label class="visually-hidden" for="popup-phone">Ваш номер телефона</label>
+          <input class="main-form__input popup-form__inpun" type="tel" name="phone" data-tel-input placeholder="Телефон" id="popup-phone" required>
+          <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
+          <textarea class="main-form__input popup-form__inpun main-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
+          <button class="main-form__button popup-form__button" type="submit">отправить</button>
+          <input class="main-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required>
+          <label class="main-form__checkbox-label" for="popup-agreement">
+            Я согласен на обработку персональных данных
+          </label>
+        </form>
       </div>
     </div>
   </div>
-
-
-
-<!--   <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
   <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>

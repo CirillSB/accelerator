@@ -1,24 +1,20 @@
 .accordion-pointer {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
 
-  @include vp-767 {
-    display: block;
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: $color-default-white;
-    }
+    background-color: $color-default-white;
   }
 }
