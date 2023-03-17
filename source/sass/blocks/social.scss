@@ -9,17 +9,23 @@
     margin: 0;
   }
 
-  @include vp-1023 {
-    padding-top: 25px;
+  @include vp-767 {
+    padding-top: 21px;
   }
 }
 
 .social__item {
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 5px;
+
 
   &:last-child {
     margin: 0;
+  }
+
+  @include vp-1023 {
+    margin-right: 25px;
+    padding: 0;
   }
 }
 

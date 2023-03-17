@@ -11,6 +11,11 @@
   height: 40px;
   background-color: transparent;
 
+  @include vp-767 {
+    top: 46%;
+    right: -11px;
+  }
+
   &::before,
   &::after {
     content: "";

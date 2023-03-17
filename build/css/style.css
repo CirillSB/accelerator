@@ -1398,7 +1398,7 @@ main {
 }
 
 .main-footer__inner {
-  padding: 45px 0 50px;
+  padding: 50px 0 43px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1424,21 +1424,19 @@ main {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  margin-right: 157px;
 }
 
 .main-footer__sections {
-  width: 41%;
+  width: 40%;
 }
 
 .main-footer__contacts {
-  width: 26%;
+  width: 28%;
 }
 
 .main-footer__title {
-  margin: 0 0 20px 0;
+  margin: 7px 0 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1474,7 +1472,7 @@ main {
 }
 
 .social__item {
-  margin-right: 10px;
+  margin-right: 15px;
   padding: 5px;
 }
 
@@ -1513,7 +1511,7 @@ main {
 .sections__list {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 97%;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -1526,7 +1524,8 @@ main {
 }
 
 .sections__item {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  width: 90%;
 }
 
 .sections__item:last-child {
@@ -1537,6 +1536,7 @@ main {
   font-style: normal;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
 }
 
 .contacts__phones {
@@ -1544,6 +1544,10 @@ main {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.contacts__phone {
+  margin-bottom: 5px;
 }
 
 .pull-down-list {
@@ -1598,7 +1602,7 @@ main {
 }
 
 .promo__inner {
-  width: 50%;
+  width: 970px;
   min-width: 870px;
   margin: 0 auto;
   padding: 305px 0 295px;
@@ -1621,13 +1625,13 @@ main {
   font-size: 22px;
   line-height: 34px;
   color: #f2f5f7;
-  margin: 0 0 63px;
+  margin: 0 0 64px;
   width: 70%;
 }
 
 .promo__link {
   background-color: #00b3ff;
-  padding: 18px 25px;
+  padding: 17px 25px;
   border-radius: 3px;
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1713,7 +1717,7 @@ main {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 }
 
 .about-company__picture-wrapper {
@@ -1823,7 +1827,7 @@ main {
 
 .goods-services {
   background-color: #041427;
-  padding: 70px 0 134px;
+  padding: 66px 0 140px;
 }
 
 .goods-services__title {
@@ -1832,7 +1836,7 @@ main {
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin: 0 0 50px;
+  margin: 0 0 53px;
 }
 
 .goods-services__inner {
@@ -1849,7 +1853,7 @@ main {
 
 .goods-services__link {
   display: inline-block;
-  width: 29%;
+  width: 28.6885245902%;
 }
 
 .offer {
@@ -1858,7 +1862,7 @@ main {
 
 .offer__title {
   position: absolute;
-  top: 50px;
+  top: 47px;
   left: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -1909,8 +1913,8 @@ main {
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 30px;
-  grid-row-gap: 25px;
-  width: 30%;
+  grid-row-gap: 21px;
+  width: 580px;
 }
 
 .main-form__input {
@@ -1963,7 +1967,7 @@ main {
 
 .main-form__input--textarea {
   grid-column: 1/-1;
-  padding: 22px 15px 47px;
+  padding: 24px 15px 20px;
 }
 
 .main-form__button {
@@ -1977,12 +1981,15 @@ main {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 15px 25px;
-  margin-top: 10px;
+  padding: 13px 0;
+  margin-top: 14px;
+  width: 265px;
 }
 
 .main-form__checkbox-label {
   position: relative;
+  top: 14px;
+  left: 10px;
   font-family: "PTMono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2004,7 +2011,7 @@ main {
   border-radius: 2px;
   min-width: 15px;
   height: 15px;
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .main-form__checkbox-label::after {
@@ -2070,8 +2077,8 @@ main {
 
 .ask-questions__banner {
   position: absolute;
-  top: 47%;
-  left: 18%;
+  top: 392px;
+  left: 350px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2093,8 +2100,8 @@ main {
   align-items: flex-start;
   position: relative;
   top: 0;
-  left: 51%;
-  padding: 164px 0 244px;
+  left: 980px;
+  padding: 164px 0 250px;
 }
 
 .ask-questions__title {
@@ -2103,7 +2110,7 @@ main {
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin: 0 0 15px 0;
+  margin: 0 0 14px -5px;
 }
 
 .ask-questions__text {
@@ -2205,6 +2212,7 @@ main {
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
     grid-row-gap: 30px;
+    padding: 49px 0 43px;
   }
 
   .main-footer__links {
@@ -2219,7 +2227,7 @@ main {
     -ms-flex-align: center;
     align-items: center;
     grid-column: 1/-1;
-    padding: 0;
+    margin-right: 0;
   }
 
   .main-footer__sections {
@@ -2228,14 +2236,16 @@ main {
 
   .main-footer__contacts {
     width: 100%;
+    margin-left: 15px;
   }
 
   .social {
     margin: 0;
   }
 
-  .social {
-    padding-top: 25px;
+  .social__item {
+    margin-right: 25px;
+    padding: 0;
   }
 
   .sections {
@@ -2265,7 +2275,7 @@ main {
   .promo__inner {
     width: 87%;
     min-width: 670px;
-    padding: 180px 0 222px;
+    padding: 180px 0 220px;
   }
 
   .promo__title {
@@ -2276,12 +2286,12 @@ main {
 
   .promo__text {
     width: 100%;
-    margin: 0 0 70px;
+    margin: 0 0 73px;
   }
 
   .promo__link {
     margin-left: 7%;
-    padding: 18px 25px;
+    padding: 16px 25px;
   }
 
   .advantages-list {
@@ -2307,7 +2317,7 @@ main {
   }
 
   .about-company {
-    padding-bottom: 84px;
+    padding-bottom: 80px;
   }
 
   .about-company__picture-wrapper {
@@ -2315,7 +2325,7 @@ main {
   }
 
   .about-company__title {
-    margin: 0 0 8px;
+    margin: -4px 0 12px;
   }
 
   .about-company__text-wrapper {
@@ -2326,16 +2336,20 @@ main {
     margin-bottom: 13px;
   }
 
+  .about-company__text {
+    margin: 0 0 18px 0;
+  }
+
   .about-company__button {
     padding: 13px 48px;
   }
 
   .goods-services {
-    padding: 55px 0 77px;
+    padding: 55px 0 75px;
   }
 
   .goods-services__title {
-    margin: 0 0 36px;
+    margin: 0 0 38px;
   }
 
   .goods-services__inner {
@@ -2359,7 +2373,7 @@ main {
 
   .offer__title {
     width: 22.4%;
-    top: 40px;
+    top: 37px;
     left: 45px;
   }
 
@@ -2376,21 +2390,30 @@ main {
     grid-row-gap: 20px;
   }
 
+  .main-form__input--textarea {
+    padding: 31px 15px 14px;
+  }
+
   .main-form__button {
-    margin-top: 14px;
-    padding: 13px 0;
+    margin-top: 15px;
+    padding: 16px 0 10px;
     width: 83%;
   }
 
   .main-form__checkbox-label {
-    padding-top: 20px;
+    top: 10px;
+    left: 0;
+  }
+
+  .main-form__checkbox-label::before {
+    margin-right: 10px;
   }
 
   .ask-questions__form-wrapper {
     position: static;
     width: 87.012987013%;
     margin: 0 auto;
-    padding: 47px 0 125px;
+    padding: 45px 0 125px;
   }
 
   .ask-questions__title {
@@ -2431,6 +2454,10 @@ main {
     padding: 15px 0 20px;
   }
 
+  .logo-link--footer {
+    width: 109%;
+  }
+
   .navigation__list {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -2454,7 +2481,7 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 25px 0 35px;
+    padding: 34px 0 35px;
   }
 
   .main-footer__links {
@@ -2471,22 +2498,30 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 29px;
   }
 
   .main-footer__sections {
     width: 100%;
   }
 
+  .main-footer__contacts {
+    margin-left: 0;
+  }
+
   .main-footer__title {
     position: relative;
     margin: 0;
-    padding: 20px 0;
+    padding: 22px 0 21px;
     width: 100%;
   }
 
   .main-footer__link {
     font-size: 14px;
+  }
+
+  .social {
+    padding-top: 21px;
   }
 
   .sections {
@@ -2504,16 +2539,23 @@ main {
 
   .contacts__address {
     font-size: 14px;
+    line-height: 19px;
+    margin: -3px 0 16px;
   }
 
   .contacts__phones {
-    padding-bottom: 20px;
+    padding-bottom: 9px;
   }
 
   .border {
     display: block;
     width: 100vw;
     border-bottom: 1px solid #ffffff;
+  }
+
+  .accordion-pointer {
+    top: 46%;
+    right: -11px;
   }
 
   .promo__inner {
@@ -2531,7 +2573,7 @@ main {
   .promo__text {
     font-size: 14px;
     line-height: 22px;
-    margin: 0 0 46px;
+    margin: 0 0 44px;
   }
 
   .promo__link {
@@ -2539,7 +2581,7 @@ main {
     display: inline-block;
     text-align: center;
     width: 100%;
-    padding: 11px 25px;
+    padding: 12px 25px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -2610,6 +2652,7 @@ main {
   }
 
   .about-company__button {
+    margin-top: -3px;
     padding: 9px 40px;
   }
 
@@ -2622,20 +2665,21 @@ main {
   }
 
   .goods-services {
-    padding: 50px 0 86px;
+    padding: 47px 0 86px;
   }
 
   .goods-services__title {
-    margin: 0 0 26px;
+    margin: 0 0 29px;
     font-size: 28px;
     line-height: 39px;
     padding-right: 3%;
   }
 
   .offer__title {
-    width: 55%;
+    width: 50%;
     top: 27px;
     left: 30px;
+    font-size: 18px;
   }
 
   .offer__span {
@@ -2679,12 +2723,17 @@ main {
   }
 
   .main-form__input--textarea {
-    padding: 31px 15px 40px;
+    padding: 22px 15px 47px;
   }
 
   .main-form__button {
     margin: 7px 0 4px;
     width: 100%;
+  }
+
+  .main-form__checkbox-label {
+    top: 22px;
+    left: 5px;
   }
 
   .main-form__checkbox-label::after {
@@ -2693,11 +2742,11 @@ main {
 
   .ask-questions__form-wrapper {
     width: 84.375%;
-    padding: 50px 0 90px;
+    padding: 47px 0 110px;
   }
 
   .ask-questions__title {
-    margin: 0 0 6px 0;
+    margin: 0 0 7px 0;
     font-size: 30px;
     line-height: 42px;
   }
@@ -2705,7 +2754,7 @@ main {
   .ask-questions__text {
     font-size: 14px;
     line-height: 19px;
-    margin: 0 0 32px 0;
+    margin: 0 0 34px 0;
   }
 }
 

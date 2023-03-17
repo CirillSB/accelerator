@@ -8,9 +8,12 @@
   font-style: normal;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
 
   @include vp-767 {
     font-size: 14px;
+    line-height: 19px;
+    margin: -3px 0 16px;
   }
 }
 
@@ -21,6 +24,10 @@
   list-style-type: none;
 
   @include vp-767 {
-    padding-bottom: 20px;
+    padding-bottom: 9px;
   }
+}
+
+.contacts__phone {
+  margin-bottom: 5px;
 }

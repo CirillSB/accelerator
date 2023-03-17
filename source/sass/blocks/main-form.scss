@@ -3,8 +3,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 30px;
-  grid-row-gap: 25px;
-  width: 30%;
+  grid-row-gap: 21px;
+  width: 580px;
 
   @include vp-1023 {
     width: 100%;
@@ -47,10 +47,14 @@
 
   &--textarea {
     grid-column: 1 / -1;
-    padding: 22px 15px 47px;
+    padding: 24px 15px 20px;
+
+    @include vp-1023 {
+      padding: 31px 15px 14px;
+    }
 
     @include vp-767 {
-      padding: 31px 15px 40px;
+      padding: 22px 15px 47px;
     }
   }
 }
@@ -66,12 +70,13 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
-  padding: 15px 25px;
-  margin-top: 10px;
+  padding: 13px 0;
+  margin-top: 14px;
+  width: 265px;
 
   @include vp-1023 {
-    margin-top: 14px;
-    padding: 13px 0;
+    margin-top: 15px;
+    padding: 16px 0 10px;
     width: 83%;
   }
 
@@ -83,6 +88,8 @@
 
 .main-form__checkbox-label {
   position: relative;
+  top: 14px;
+  left: 10px;
   font-family: $ff-text;
   font-weight: 400;
   font-size: 14px;
@@ -93,7 +100,13 @@
   align-items: center;
 
   @include vp-1023 {
-    padding-top: 20px;
+    top: 10px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    top: 22px;
+    left: 5px;
   }
 
   &::before {
@@ -103,7 +116,11 @@
     border-radius: 2px;
     min-width: 15px;
     height: 15px;
-    margin-right: 11px;
+    margin-right: 12px;
+
+    @include vp-1023 {
+      margin-right: 10px;
+    }
   }
 
   &::after {

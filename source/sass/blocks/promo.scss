@@ -7,7 +7,7 @@
 }
 
 .promo__inner {
-  width: 50%;
+  width: 970px;
   min-width: 870px;
   margin: 0 auto;
   padding: 305px 0 295px;
@@ -15,7 +15,7 @@
   @include vp-1023 {
     width: 87%;
     min-width: 670px;
-    padding: 180px 0 222px;
+    padding: 180px 0 220px;
   }
 
   @include vp-767 {
@@ -54,24 +54,24 @@
   font-size: 22px;
   line-height: 34px;
   color: $AthensGray;
-  margin: 0 0 63px;
+  margin: 0 0 64px;
   width: 70%;
 
   @include vp-1023 {
     width: 100%;
-    margin: 0 0 70px;
+    margin: 0 0 73px;
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
-    margin: 0 0 46px;
+    margin: 0 0 44px;
   }
 }
 
 .promo__link {
   background-color: $DeepSkyBlue;
-  padding: 18px 25px;
+  padding: 17px 25px;
   border-radius: 3px;
   margin: 0;
   font-family: $ff-title;
@@ -84,7 +84,7 @@
 
   @include vp-1023 {
     margin-left: 7%;
-    padding: 18px 25px;
+    padding: 16px 25px;
   }
 
   @include vp-767 {
@@ -92,7 +92,7 @@
     display: inline-block;
     text-align: center;
     width: 100%;
-    padding: 11px 25px;
+    padding: 12px 25px;
     font-size: 14px;
     line-height: 16px;
   }

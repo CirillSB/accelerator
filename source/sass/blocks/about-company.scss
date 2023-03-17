@@ -2,10 +2,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 95px;
+  padding-bottom: 94px;
 
   @include vp-1023 {
-    padding-bottom: 84px;
+    padding-bottom: 80px;
   }
 
   @include vp-767 {
@@ -41,7 +41,7 @@
   margin: 0 0 15px;
 
   @include vp-1023 {
-    margin: 0 0 8px;
+    margin: -4px 0 12px;
   }
 
   @include vp-767 {
@@ -73,6 +73,10 @@
     margin: 0;
   }
 
+  @include vp-1023 {
+    margin: 0 0 18px 0;
+  }
+
   @include vp-767 {
     font-size: 14px;
     line-height: 19px;
@@ -97,6 +101,7 @@
   }
 
   @include vp-767 {
+    margin-top: -3px;
     padding: 9px 40px;
   }
 }

@@ -1,13 +1,13 @@
 .goods-services {
   background-color: $BlackPearl;
-  padding: 70px 0 134px;
+  padding: 66px 0 140px;
 
   @include vp-1023 {
-    padding: 55px 0 77px;
+    padding: 55px 0 75px;
   }
 
   @include vp-767 {
-    padding: 50px 0 86px;
+    padding: 47px 0 86px;
   }
 }
 
@@ -17,14 +17,14 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
-  margin: 0 0 50px;
+  margin: 0 0 53px;
 
   @include vp-1023 {
-    margin: 0 0 36px;
+    margin: 0 0 38px;
   }
 
   @include vp-767 {
-    margin: 0 0 26px;
+    margin: 0 0 29px;
     font-size: 28px;
     line-height: 39px;
     padding-right: 3%;
@@ -44,7 +44,7 @@
 
 .goods-services__link {
   display: inline-block;
-  width: 29%;
+  width: calc(350 / 1220 * 100%);
 
   @include vp-1023 {
     width: 100%;

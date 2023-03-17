@@ -1,19 +1,17 @@
 export const changeDescriptionVisibility = () => {
-  const appearingParagraph = document.querySelectorAll('[data-text-visibility-state]');
+
   const showingTextButton = document.querySelector('.about-company__button');
 
-  const onlyMobileVisible = document.querySelector('[data-visible-except-mobile]');
-  if (window.matchMedia('(max-width: 767px)').matches) {
-    onlyMobileVisible.dataset.visibleExceptMobile = 'js-hidden';
-  }
+  const textSnippet = document.querySelector('.about-company__text span');
 
-  const changeMobileTextVisibility = () => {
-    if (onlyMobileVisible.dataset.visibleExceptMobile === 'js-hidden') {
-      onlyMobileVisible.dataset.visibleExceptMobile = 'js-visible';
-    } else if (onlyMobileVisible.dataset.visibleExceptMobile === 'js-visible') {
-      onlyMobileVisible.dataset.visibleExceptMobile = 'js-hidden';
-    }
-  };
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    textSnippet.dataset.textVisibilityState = 'js-hidden';
+  }
+  const appearingParagraph = document.querySelectorAll('[data-text-visibility-state]');
+
+  appearingParagraph.forEach((e) => {
+    e.dataset.textVisibilityState = 'js-hidden';
+  });
 
   const changeTextVisibility = () => {
     appearingParagraph.forEach((e) => {
@@ -23,14 +21,7 @@ export const changeDescriptionVisibility = () => {
         e.dataset.textVisibilityState = 'js-hidden';
       }
     });
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      changeMobileTextVisibility();
-    }
   };
-
-  appearingParagraph.forEach((e) => {
-    e.dataset.textVisibilityState = 'js-hidden';
-  });
 
   showingTextButton.addEventListener('pointerdown', () => {
     changeTextVisibility();
