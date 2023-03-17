@@ -2736,7 +2736,7 @@ main {
   }
 
   .main-form__checkbox-label::after {
-    top: 66%;
+    top: 48%;
   }
 
   .ask-questions__form-wrapper {
