@@ -1912,9 +1912,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
-  grid-column-gap: 30px;
+  grid-column-gap: 5.1724137931%;
   grid-row-gap: 21px;
-  width: 580px;
+  width: 74.7%;
 }
 
 .main-form__input {
@@ -1983,7 +1983,7 @@ main {
   color: #ffffff;
   padding: 13px 0;
   margin-top: 14px;
-  width: 265px;
+  width: 96.5%;
 }
 
 .main-form__checkbox-label {
@@ -2073,15 +2073,17 @@ main {
   position: relative;
   background-color: #00b3ff;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .ask-questions__banner {
-  position: absolute;
-  top: 392px;
-  left: 350px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin: 0 6.25% 56px 18.2291666667%;
+  width: 26.5625%;
 }
 
 .ask-questions__form-wrapper {
@@ -2098,9 +2100,6 @@ main {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  position: relative;
-  top: 0;
-  left: 980px;
   padding: 164px 0 250px;
 }
 
@@ -2521,7 +2520,7 @@ main {
   }
 
   .social {
-    padding-top: 21px;
+    padding: 21px 0 0 4px;
   }
 
   .sections {

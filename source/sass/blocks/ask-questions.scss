@@ -2,13 +2,13 @@
   position: relative;
   background-color: $DeepSkyBlue;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .ask-questions__banner {
-  position: absolute;
-  top: 392px;
-  left: 350px;
-  transform: translateY(-50%);
+  margin: 0 calc(120 / 1920 * 100%) 56px calc(350 / 1920 * 100%);
+  width: calc(510 / 1920 * 100%);
 }
 
 .ask-questions__form-wrapper {
@@ -16,9 +16,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  position: relative;
-  top: 0;
-  left: 980px;
   padding: 164px 0 250px;
 
   @include vp-1023 {
