@@ -12,3 +12,11 @@
 .contact-link__span {
   margin-left: 15px;
 }
+
+.contact-link__img {
+  margin-right: 14px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}

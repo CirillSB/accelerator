@@ -11,6 +11,26 @@
   @include vp-767 {
     padding-bottom: 79px;
   }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    color: $BlackPearl;
+    margin: 0 0 20px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    @include vp-1023 {
+      margin: 0 0 18px 0;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
 }
 
 .about-company__picture-wrapper {
@@ -60,26 +80,6 @@
 
   @include vp-1023 {
     margin-bottom: 13px;
-  }
-}
-
-.about-company__text {
-  font-size: 16px;
-  line-height: 22px;
-  color: $BlackPearl;
-  margin: 0 0 20px 0;
-
-  &:last-child {
-    margin: 0;
-  }
-
-  @include vp-1023 {
-    margin: 0 0 18px 0;
-  }
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 19px;
   }
 }
 
