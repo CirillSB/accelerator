@@ -1597,6 +1597,40 @@ main {
   background-color: #ffffff;
 }
 
+.accordion-pointer::before {
+  width: 15px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.accordion-pointer::after {
+  width: 15px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion-pointer--minimized::before {
+  width: 15px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.accordion-pointer--minimized::after {
+  content: none;
+}
+
 .promo {
   background-color: #041427;
   background-image: url("../img/background.webp");
@@ -1777,40 +1811,6 @@ main {
   padding: 13px 51px;
   border: 1px solid #00b3ff;
   border-radius: 3px;
-}
-
-[data-changing-pointer=js-closed]::before {
-  width: 15px;
-  height: 1px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-[data-changing-pointer=js-closed]::after {
-  width: 15px;
-  height: 1px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-  -ms-transform: translate(-50%, -50%) rotate(90deg);
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-[data-changing-pointer=js-open]::before {
-  width: 15px;
-  height: 1px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-[data-changing-pointer=js-open]::after {
-  content: none;
 }
 
 [data-text-visibility-state=js-hidden] {
@@ -2148,6 +2148,10 @@ main {
 
 .ask-questions__image {
   display: inline-block;
+}
+
+.hidden {
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -2690,14 +2694,6 @@ main {
   .about-company__button {
     margin-top: -3px;
     padding: 9px 40px;
-  }
-
-  [data-hiding-block=js-hidden] {
-    display: none;
-  }
-
-  [data-hiding-block=js-visible] {
-    display: block;
   }
 
   .goods-services {

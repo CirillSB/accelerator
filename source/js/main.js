@@ -8,8 +8,9 @@ import {
   Form
 } from './modules/form-validate/form';
 import {
-  showMenu
-} from './modules/show-menu';
+  changeStateAccordion,
+  initAccordion
+} from './modules/init-accordion';
 import {
   initModalFeedback
 } from './modules/init-modal-feedback';
@@ -23,7 +24,8 @@ import {
 window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
-  showMenu();
+  initAccordion();
+  changeStateAccordion();
   setMaskTel();
   initModalFeedback();
   changeDescriptionVisibility();

@@ -107,7 +107,7 @@
           <h2 class="visually-hidden">
             Наши преимущества
           </h2>
-          <section class="advantages-list__item advantage">
+          <section class="advantages-list__item advantage" data-advantage>
             <svg class="advantage__svg">
               <use xlink:href="img/sprite.svg#clock"></use>
             </svg>
@@ -295,7 +295,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer" data-footer>
+    <footer class="main-footer" data-accordion="parent">
       <div class="container">
         <div class="main-footer__inner">
           <div class="main-footer__links">
@@ -344,12 +344,12 @@
             </ul>
           </div>
           <span class="border"></span>
-          <section class="main-footer__sections sections" data-resizing-block>
-            <h2 class="main-footer__title" data-resizing-block-button>
+          <section class="main-footer__sections sections" data-accordion>
+            <h2 class="main-footer__title" data-accordion="button">
               Разделы сайта
-              <span class="accordion-pointer visible-only-mobile" data-changing-pointer></span>
+              <span class="accordion-pointer visible-only-mobile" data-accordion="icon"></span>
             </h2>
-            <ul class="sections__list visible-except-mobile" data-hiding-block>
+            <ul class="sections__list" data-accordion="content">
               <li class="sections__item">
                 <a class="main-footer__link" href="#">
                   О&nbsp;Компании
@@ -388,12 +388,12 @@
             </ul>
           </section>
           <span class="border"></span>
-          <section class="main-footer__contacts contacts" data-resizing-block>
-            <h2 class="main-footer__title" data-resizing-block-button>
+          <section class="main-footer__contacts contacts" data-accordion>
+            <h2 class="main-footer__title" data-accordion="button">
               Наш офис
-              <span class="accordion-pointer visible-only-mobile" data-changing-pointer></span>
+              <span class="accordion-pointer visible-only-mobile" data-accordion="icon"></span>
             </h2>
-            <div class="pull-down-list visible-except-mobile" data-hiding-block>
+            <div class="pull-down-list" data-accordion="content">
               <address class="contacts__address">
                 г. Мытищи, Олимпийский проспект, д.10
               </address>
