@@ -28,15 +28,16 @@ import {
 } from './vendor/focus-visible-polyfill';
 
 window.addEventListener('DOMContentLoaded', () => {
-
   iosVhFix();
   testWebP();
   initAccordion();
   changeStateAccordion();
   setMaskTel();
-  initModalFeedback();
   changeDescriptionVisibility();
-  applyFocusVisiblePolyfill();
+  if (window.matchMedia('(min-width: 1024px)').matches) {
+    initModalFeedback();
+    applyFocusVisiblePolyfill();
+  }
 
   window.addEventListener('load', () => {
     initModals();
