@@ -20,15 +20,23 @@ import {
 import {
   setMaskTel
 } from './modules/set-mask-tel';
+import {
+  testWebP
+} from './modules/test-webp';
+import {
+  applyFocusVisiblePolyfill
+} from './vendor/focus-visible-polyfill';
 
 window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
+  testWebP();
   initAccordion();
   changeStateAccordion();
   setMaskTel();
   initModalFeedback();
   changeDescriptionVisibility();
+  applyFocusVisiblePolyfill();
 
   window.addEventListener('load', () => {
     initModals();

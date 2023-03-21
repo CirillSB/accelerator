@@ -1,4 +1,6 @@
 export const initModalFeedback = () => {
+  const body = document.querySelector('body');
+  const page = document.querySelector('.wrapper');
   const buttonOpenModal = document.querySelector('[data-open-modal]');
   const buttonCloseModal = document.querySelectorAll('[data-close-modal]');
   const modal = document.querySelector('[data-modal="feedback"]');
@@ -6,10 +8,12 @@ export const initModalFeedback = () => {
 
   const showModal = () => {
     modal.classList.add('is-active');
-    nameInput.focus();
     buttonOpenModal.removeEventListener('click', showModal);
     modal.addEventListener('click', hideModalClick);
     document.addEventListener('keydown', hideModalKeyDown);
+    nameInput.focus();
+    body.style.overflowY = 'hidden';
+    page.inert = true;
   };
 
   const closeModal = () => {
@@ -17,6 +21,8 @@ export const initModalFeedback = () => {
     buttonOpenModal.addEventListener('click', showModal);
     modal.removeEventListener('click', hideModalClick);
     document.removeEventListener('keydown', hideModalKeyDown);
+    body.style.overflowY = 'visible';
+    page.inert = false;
   };
 
   const hideModalClick = () => {

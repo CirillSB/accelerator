@@ -58,3 +58,7 @@
 .offer__image {
   width: 100%;
 }
+
+.offer:hover .offer__title {
+  color: $DeepSkyBlue;
+}

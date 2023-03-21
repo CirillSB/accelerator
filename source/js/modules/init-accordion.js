@@ -4,16 +4,18 @@ const accordionContent = document.querySelectorAll('[data-accordion="content"]')
 const accordionControlIcon = document.querySelectorAll('[data-accordion="icon"]');
 
 const initAccordion = () => {
-  accordionContent.forEach((e) => {
-    if (!e.classList.contains('hidden')) {
-      e.classList.add('hidden');
-    }
-  });
-  accordionControlIcon.forEach((e) => {
-    if (e.classList.contains('accordion-pointer--minimized')) {
-      e.classList.remove('accordion-pointer--minimized');
-    }
-  });
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    accordionContent.forEach((e) => {
+      if (!e.classList.contains('hidden')) {
+        e.classList.add('hidden');
+      }
+    });
+    accordionControlIcon.forEach((e) => {
+      if (e.classList.contains('accordion-pointer--minimized')) {
+        e.classList.remove('accordion-pointer--minimized');
+      }
+    });
+  }
 };
 
 const changeStateAccordion = () => {

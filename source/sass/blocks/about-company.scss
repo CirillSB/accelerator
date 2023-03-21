@@ -37,6 +37,7 @@
   flex-shrink: 0;
   width: 150px;
   margin-right: 8%;
+  background-color: transparent;
 
   @include vp-1023 {
     margin-right: 4%;
@@ -95,6 +96,11 @@
   padding: 13px 51px;
   border: 1px solid $DeepSkyBlue;
   border-radius: 3px;
+
+  &:hover {
+    color: $Whisper;
+    background-color: $DeepSkyBlue;
+  }
 
   @include vp-1023 {
     padding: 13px 48px;

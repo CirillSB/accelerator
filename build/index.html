@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" as="image" href="img/background.webp" />
 </head>
 
 <body>
@@ -35,7 +34,7 @@
           <nav class="main-header__navigation navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link contact-link visible-only-desktop" href="#">
+                <a class="navigation__link contact-link visible-only-desktop" href="mailto:info@sd.ru">
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#emailsvg"></use>
                   </svg>
@@ -44,7 +43,7 @@
                   </span>
                     info@sd.ru
                 </a>
-                <a class="navigation__link contact-link visible-except-desktop" href="#">
+                <a class="navigation__link contact-link visible-except-desktop" href="mailto:info@sd.ru">
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#emailsvg"></use>
                   </svg>
@@ -54,7 +53,7 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link contact-link visible-only-desktop" href="#">
+                <a class="navigation__link contact-link visible-only-desktop" href="tel:+74950005252">
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#call"></use>
                   </svg>
@@ -63,7 +62,7 @@
                   </span>
                     +7 (495) 000 52 52
                 </a>
-                <a class="navigation__link contact-link visible-except-desktop" href="#">
+                <a class="navigation__link contact-link visible-except-desktop" href="tel:+74950005252">
                   <svg class="contact-link__img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#call"></use>
                   </svg>
@@ -279,7 +278,7 @@
           <p class="ask-questions__text">
             Мы&nbsp;проконсультируем Вас бесплатно
           </p>
-          <form class="main-form" action="#" method="post">
+          <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="name">Ваше имя</label>
             <input class="main-form__input" type="text" name="name" placeholder="Имя" id="name" required>
             <label class="visually-hidden" for="phone">Ваш номер телефона</label>
@@ -287,8 +286,8 @@
             <label class="visually-hidden" for="question">Ваш вопрос</label>
             <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
             <button class="main-form__button" type="submit">Задать вопрос</button>
-            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required>
-            <label class="main-form__checkbox-label" for="agreement">
+            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required  tabindex="0">
+            <label class="main-form__checkbox-label" for="agreement" accesskey="5">
               Я&nbsp;согласен на&nbsp;обработку персональных данных
             </label>
           </form>
@@ -431,7 +430,7 @@
     </footer>
   </div>
   <!-- Модалки -->
-  <div class="modal modal--preload" id="feedback" data-modal="feedback" tabindex="0">
+  <div class="modal modal--preload" id="feedback" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -441,7 +440,7 @@
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="main-form popup-form" action="#" method="post">
+        <form  action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="popup-name">Ваше имя</label>
           <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="popup-name" required>
           <label class="visually-hidden" for="popup-phone">Ваш номер телефона</label>
@@ -450,7 +449,7 @@
           <textarea class="main-form__input popup-form__inpun main-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
           <button class="main-form__button popup-form__button" type="submit">отправить</button>
           <input class="main-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required>
-          <label class="main-form__checkbox-label" for="popup-agreement">
+          <label class="main-form__checkbox-label" for="popup-agreement" tabindex="0">
             Я&nbsp;согласен на&nbsp;обработку персональных данных
           </label>
         </form>

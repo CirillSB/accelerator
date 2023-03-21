@@ -1335,6 +1335,11 @@ main {
   padding: 10px 15px;
 }
 
+.main-header__link:hover {
+  color: #000000;
+  background-color: #f2f5f7;
+}
+
 .contact-link {
   font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
@@ -1457,6 +1462,10 @@ main {
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.main-footer__link:hover {
+  color: #ffffff;
 }
 
 .main-footer__link--phone {
@@ -1633,7 +1642,6 @@ main {
 
 .promo {
   background-color: #041427;
-  background-image: url("../img/background.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1647,6 +1655,14 @@ main {
   color: #f2f5f7;
   margin: 0 0 64px;
   width: 70%;
+}
+
+.webp-true .promo {
+  background-image: url("../img/background-desktop@1x.webp");
+}
+
+.webp-false .promo {
+  background-image: url("../img/background-desktop@1x.jpg");
 }
 
 .promo__inner {
@@ -1679,6 +1695,11 @@ main {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+}
+
+.promo__link:hover {
+  background-color: #f2f5f7;
+  color: #00b3ff;
 }
 
 .advantages-list {
@@ -1774,6 +1795,7 @@ main {
   flex-shrink: 0;
   width: 150px;
   margin-right: 8%;
+  background-color: transparent;
 }
 
 .about-company__image {
@@ -1811,6 +1833,11 @@ main {
   padding: 13px 51px;
   border: 1px solid #00b3ff;
   border-radius: 3px;
+}
+
+.about-company__button:hover {
+  color: #ebebeb;
+  background-color: #00b3ff;
 }
 
 [data-text-visibility-state=js-hidden] {
@@ -1858,6 +1885,7 @@ main {
 .goods-services__link {
   display: inline-block;
   width: 28.6885245902%;
+  background-color: #041427;
 }
 
 .offer {
@@ -1905,6 +1933,10 @@ main {
   width: 100%;
 }
 
+.offer:hover .offer__title {
+  color: #00b3ff;
+}
+
 .visible-except-desktop {
   display: none;
 }
@@ -1923,6 +1955,7 @@ main {
   grid-column-gap: 5.1724137931%;
   grid-row-gap: 21px;
   width: 74.7%;
+  z-index: 10;
 }
 
 .main-form__input {
@@ -1979,7 +2012,7 @@ main {
 }
 
 .main-form__button {
-  background: #041427;
+  background-color: #041427;
   border-radius: 3px;
   border: none;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1992,6 +2025,11 @@ main {
   padding: 13px 0;
   margin-top: 14px;
   width: 96.5%;
+}
+
+.main-form__button:hover {
+  color: #041427;
+  background-color: #ffffff;
 }
 
 .main-form__checkbox-label {
@@ -2043,6 +2081,10 @@ main {
 
 .main-form__checkbox:checked + .main-form__checkbox-label::after {
   content: "";
+}
+
+.main-form__checkbox:focus:not(:checked) + .main-form__checkbox-label::before {
+  outline: 3px solid #ffffff;
 }
 
 .popup-form {
@@ -2144,6 +2186,7 @@ main {
 
 .ask-questions__picture {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .ask-questions__image {
@@ -2299,6 +2342,14 @@ main {
   .promo p {
     width: 100%;
     margin: 0 0 73px;
+  }
+
+  .webp-true .promo {
+    background-image: url("../img/background-tablet@1x.webp");
+  }
+
+  .webp-false .promo {
+    background-image: url("../img/background-tablet@1x.jpg");
   }
 
   .promo__inner {
@@ -2457,6 +2508,16 @@ main {
   }
 }
 
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .webp-true .promo {
+    background-image: url("../img/background-tablet@2x.webp");
+  }
+
+  .webp-false .promo {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     width: 84.375%;
@@ -2602,6 +2663,14 @@ main {
     font-size: 14px;
     line-height: 22px;
     margin: 0 0 44px;
+  }
+
+  .webp-true .promo {
+    background-image: url("../img/background-mobile@1x.webp");
+  }
+
+  .webp-false .promo {
+    background-image: url("../img/background-mobile@1x.jpg");
   }
 
   .promo__inner {
@@ -2853,6 +2922,16 @@ main {
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .webp-true .promo {
+    background-image: url("../img/background-mobile@2x.webp");
+  }
+
+  .webp-false .promo {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -2864,5 +2943,15 @@ main {
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .webp-true .promo {
+    background-image: url("../img/background-desktop@2x.webp");
+  }
+
+  .webp-false .promo {
+    background-image: url("../img/background-desktop@2x.jpg");
   }
 }

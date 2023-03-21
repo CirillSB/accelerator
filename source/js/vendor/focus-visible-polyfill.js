@@ -2,8 +2,8 @@
  * Applies the :focus-visible polyfill at the given scope.
  * A scope in this case is either the top-level Document or a Shadow Root.
  *
- * @param {(Document|ShadowRoot)} scope
- * @see https://github.com/WICG/focus-visible
+ * @ param {(Document|ShadowRoot)} scope
+ * @ see https://github.com/WICG/focus-visible
  */
 function applyFocusVisiblePolyfill(scope) {
   var hadKeyboardEvent = true;
@@ -29,7 +29,7 @@ function applyFocusVisiblePolyfill(scope) {
   /**
    * Helper function for legacy browsers and iframes which sometimes focus
    * elements like document, body, and non-interactive SVG.
-   * @param {Element} el
+   * @ param {Element} el
    */
   function isValidFocusTarget(el) {
     if (
@@ -49,8 +49,8 @@ function applyFocusVisiblePolyfill(scope) {
    * Computes whether the given element should automatically trigger the
    * `focus-visible` class being added, i.e. whether it should always match
    * `:focus-visible` when focused.
-   * @param {Element} el
-   * @return {boolean}
+   * @ param {Element} el
+   * @ return {boolean}
    */
   function focusTriggersKeyboardModality(el) {
     var type = el.type;
@@ -74,7 +74,7 @@ function applyFocusVisiblePolyfill(scope) {
   /**
    * Add the `focus-visible` class to the given element if it was not added by
    * the author.
-   * @param {Element} el
+   * @ param {Element} el
    */
   function addFocusVisibleClass(el) {
     if (el.classList.contains('focus-visible')) {
@@ -87,7 +87,7 @@ function applyFocusVisiblePolyfill(scope) {
   /**
    * Remove the `focus-visible` class from the given element if it was not
    * originally added by the author.
-   * @param {Element} el
+   * @ param {Element} el
    */
   function removeFocusVisibleClass(el) {
     if (!el.hasAttribute('data-focus-visible-added')) {
@@ -103,7 +103,7 @@ function applyFocusVisiblePolyfill(scope) {
    * then the modality is keyboard. Otherwise, the modality is not keyboard.
    * Apply `focus-visible` to any current active element and keep track
    * of our keyboard modality state with `hadKeyboardEvent`.
-   * @param {KeyboardEvent} e
+   * @ param {KeyboardEvent} e
    */
   function onKeyDown(e) {
     if (e.metaKey || e.altKey || e.ctrlKey) {
@@ -123,7 +123,7 @@ function applyFocusVisiblePolyfill(scope) {
    * This avoids the situation where a user presses a key on an already focused
    * element, and then clicks on a different element, focusing it with a
    * pointing device, while we still think we're in keyboard modality.
-   * @param {Event} e
+   * @ param {Event} e
    */
   function onPointerDown(e) {
     hadKeyboardEvent = false;
@@ -134,7 +134,7 @@ function applyFocusVisiblePolyfill(scope) {
    * - the target received focus as a result of keyboard navigation, or
    * - the event target is an element that will likely require interaction
    *   via the keyboard (e.g. a text box)
-   * @param {Event} e
+   * @ param {Event} e
    */
   function onFocus(e) {
     // Prevent IE from focusing the document or HTML element.
@@ -149,7 +149,7 @@ function applyFocusVisiblePolyfill(scope) {
 
   /**
    * On `blur`, remove the `focus-visible` class from the target.
-   * @param {Event} e
+   * @ param {Event} e
    */
   function onBlur(e) {
     if (!isValidFocusTarget(e.target)) {
@@ -173,7 +173,7 @@ function applyFocusVisiblePolyfill(scope) {
   /**
    * If the user changes tabs, keep track of whether or not the previously
    * focused element had .focus-visible.
-   * @param {Event} e
+   * @ param {Event} e
    */
   function onVisibilityChange(e) {
     if (document.visibilityState === 'hidden') {
@@ -223,7 +223,7 @@ function applyFocusVisiblePolyfill(scope) {
    * If any event is received from a pointing device (e.g. mouse, pointer,
    * touch), turn off keyboard modality.
    * This accounts for situations where focus enters the page from the URL bar.
-   * @param {Event} e
+   * @ param {Event} e
    */
   function onInitialPointerMove(e) {
     // Work around a Safari quirk that fires a mousemove on <html> whenever the
@@ -299,3 +299,4 @@ if (typeof document !== 'undefined') {
   // coordination is required to use the polyfill in the top-level document:
   applyFocusVisiblePolyfill(document);
 }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////

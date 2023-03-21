@@ -47,4 +47,9 @@
   border: 1px solid $AthensGray;
   border-radius: 3px;
   padding: 10px 15px;
+
+  &:hover {
+    color: $color-default-black;
+    background-color: $AthensGray;
+  }
 }
