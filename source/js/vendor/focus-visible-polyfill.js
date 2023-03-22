@@ -164,9 +164,9 @@ export function applyFocusVisiblePolyfill(scope) {
         // regular focus change.
         hadFocusVisibleRecently = true;
         window.clearTimeout(hadFocusVisibleRecentlyTimeout);
-        hadFocusVisibleRecentlyTimeout = window.setTimeout(function() {
+        hadFocusVisibleRecentlyTimeout = window.setTimeout(() => {
           hadFocusVisibleRecently = false;
-        }, 100);
+        }, 200);
         removeFocusVisibleClass(e.target);
       }
     }
@@ -294,11 +294,12 @@ export function applyFocusVisiblePolyfill(scope) {
 
     window.dispatchEvent(event);
   }
-}
 
-if (typeof document !== 'undefined') {
-  // Apply the polyfill to the global document, so that no JavaScript
-  // coordination is required to use the polyfill in the top-level document:
-  applyFocusVisiblePolyfill(document);
+
+  if (typeof document !== 'undefined') {
+    // Apply the polyfill to the global document, so that no JavaScript
+    // coordination is required to use the polyfill in the top-level document:
+    applyFocusVisiblePolyfill(document);
+  }
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
