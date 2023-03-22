@@ -18,6 +18,9 @@
       <div class="container">
         <div class="main-header__inner">
           <a class="logo-link" href="index.html">
+            <span class="visually-hidden">
+              Ссылка на главную страницу
+            </span>
             <svg class="logo visible-except-mobile" width="55" height="55">
               <use xlink:href="img/sprite.svg#circuit"></use>
             </svg>
@@ -41,7 +44,7 @@
                   <span class="visually-hidden">
                     Наша почта
                   </span>
-                    info@sd.ru
+                  info@sd.ru
                 </a>
                 <a class="navigation__link contact-link visible-except-desktop" href="mailto:info@sd.ru">
                   <svg class="contact-link__img" width="20" height="20">
@@ -60,7 +63,7 @@
                   <span class="visually-hidden">
                     Наш телефон
                   </span>
-                    +7 (495) 000 52 52
+                  +7 (495) 000 52 52
                 </a>
                 <a class="navigation__link contact-link visible-except-desktop" href="tel:+74950005252">
                   <svg class="contact-link__img" width="20" height="20">
@@ -156,8 +159,8 @@
         <section class="about-company">
           <div class="about-company__picture-wrapper visible-except-mobile">
             <picture class="about-company__picture">
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/2022@1x.webp 1x, img/2022@2x.webp 2x">
-              <img class="about-company__image"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/2022@1x.png" srcset="img/2022@2x.webp 2x" width="160" height="320" alt="Стилизованный под печатную плату номер текущего года.">
+              <source type="image/webp" media="(min-width: 767px)" srcset="img/2022@1x.webp 1x, img/2022@2x.webp 2x">
+              <img class="about-company__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/2022@1x.png" srcset="img/2022@2x.webp 2x" width="300" height="640" alt="Стилизованный под печатную плату номер текущего года.">
             </picture>
           </div>
           <div class="about-company__inner">
@@ -208,7 +211,7 @@
                 <img class="offer__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/card-mobile1@1x.jpg" srcset="img/card-mobile1@2x.jpg 2x" width="350" height="650" alt="Фрагмент печатной платы.">
               </picture>
               <noscript>
-                <img src="img/card-mobile1@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы."/>
+                <img src="img/card-mobile1@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы." />
               </noscript>
               <h3 class="offer__title">
                 Производство печатных плат
@@ -229,7 +232,7 @@
                 <img class="offer__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/card-mobile2@1x.jpg" srcset="img/card-mobile2@2x.jpg 2x" width="350" height="650" alt="Фрагмент печатной платы.">
               </picture>
               <noscript>
-                <img src="img/card-mobile2@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы."/>
+                <img src="img/card-mobile2@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы." />
               </noscript>
               <h3 class="offer__title">
                 Монтаж печатных плат
@@ -250,7 +253,7 @@
                 <img class="offer__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/card-mobile3@1x.jpg" srcset="img/card-mobile3@2x.jpg 2x" width="350" height="650" alt="Фрагмент печатной платы.">
               </picture>
               <noscript>
-                <img src="img/card-mobile3@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы."/>
+                <img src="img/card-mobile3@1x.jpg" width="350" height="650" alt="Фрагмент печатной платы." />
               </noscript>
               <h3 class="offer__title">
                 Комплектующие для светотехники
@@ -286,7 +289,7 @@
             <label class="visually-hidden" for="question">Ваш вопрос</label>
             <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
             <button class="main-form__button" type="submit">Задать вопрос</button>
-            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required  tabindex="0">
+            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required tabindex="0">
             <label class="main-form__checkbox-label" for="agreement" accesskey="5">
               Я&nbsp;согласен на&nbsp;обработку персональных данных
             </label>
@@ -299,6 +302,9 @@
         <div class="main-footer__inner">
           <div class="main-footer__links">
             <a class="logo-link logo-link--footer" href="index.html">
+              <span class="visually-hidden">
+                Ссылка на главную страницу
+              </span>
               <svg class="logo" width="55" height="55">
                 <use xlink:href="img/sprite.svg#circuit"></use>
               </svg>
@@ -440,7 +446,7 @@
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form  action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="popup-name">Ваше имя</label>
           <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="popup-name" required>
           <label class="visually-hidden" for="popup-phone">Ваш номер телефона</label>
