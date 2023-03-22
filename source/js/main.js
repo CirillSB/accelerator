@@ -23,9 +23,6 @@ import {
 import {
   testWebP
 } from './modules/test-webp';
-import {
-  applyFocusVisiblePolyfill
-} from './vendor/focus-visible-polyfill';
 
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
@@ -36,13 +33,5 @@ window.addEventListener('DOMContentLoaded', () => {
   changeDescriptionVisibility();
   if (window.matchMedia('(min-width: 1024px)').matches) {
     initModalFeedback();
-    applyFocusVisiblePolyfill();
   }
-
-  window.addEventListener('load', () => {
-    initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
-  });
 });
