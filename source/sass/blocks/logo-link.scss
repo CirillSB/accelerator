@@ -1,28 +1,3 @@
 .logo-link {
   display: flex;
-  align-items: center;
-  color: $AthensGray;
-
-  &--footer {
-    @include vp-767 {
-      width: 109%;
-    }
-  }
-}
-
-.logo-link__text {
-  font-family: $ff-title;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  margin: 0 0 0 15px;
-}
-
-.logo-link__span {
-  display: block;
-  font-family: $ff-additional;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
 }

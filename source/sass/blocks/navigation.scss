@@ -13,14 +13,14 @@
 
   @include vp-767 {
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 6px;
     padding: 1px 0 0 0;
   }
 }
 
 .navigation__item {
   @include vp-1023 {
-    margin-right: 22px;
+    margin-right: 14px;
     padding: 0;
 
     &:last-child {
@@ -29,6 +29,6 @@
   }
 
   @include vp-767 {
-    margin-right: 40px;
+    margin-right: 26px;
   }
 }
