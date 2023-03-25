@@ -1,6 +1,7 @@
 .container {
   width: calc((1920 - 700) / 1920 * 100%);
   min-width: 950px;
+  max-width: 1220px;
   margin: 0 auto;
 
   @include vp-1023 {

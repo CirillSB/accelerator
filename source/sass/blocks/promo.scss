@@ -75,8 +75,9 @@
 }
 
 .promo__inner {
-  width: 970px;
+  width: calc(970 / 1920 * 100%);
   min-width: 870px;
+  max-width: 970px;
   margin: 0 auto;
   padding: 305px 0 295px;
 

@@ -268,32 +268,36 @@
         </div>
       </section>
       <section class="ask-questions" id="ask">
-        <div class="ask-questions__banner visible-only-desktop">
-          <picture class="ask-questions__picture">
-            <source type="image/webp" srcset="img/airplane-model@1x.webp 1x, img/airplane-model@2x.webp 2x">
-            <img class="ask-questions__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/airplane-model@1x.png" srcset="img/airplane-model@2x.png 2x" width="510" height="285" alt="Макет самолёта.">
-          </picture>
-        </div>
-        <div class="ask-questions__form-wrapper">
-          <h3 class="ask-questions__title">
-            Остались вопросы? Задайте их&nbsp;нам!
-          </h3>
-          <p class="ask-questions__text">
-            Мы&nbsp;проконсультируем Вас бесплатно
-          </p>
-          <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="name">Ваше имя</label>
-            <input class="main-form__input" type="text" name="name" placeholder="Имя" id="name" required>
-            <label class="visually-hidden" for="phone">Ваш номер телефона</label>
-            <input class="main-form__input" type="tel" id="phone" name="phone" data-tel-input placeholder="Телефон" required>
-            <label class="visually-hidden" for="question">Ваш вопрос</label>
-            <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
-            <button class="main-form__button" type="submit">Задать вопрос</button>
-            <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required tabindex="0">
-            <label class="main-form__checkbox-label" for="agreement" accesskey="5">
-              Я&nbsp;согласен на&nbsp;обработку персональных данных
-            </label>
-          </form>
+        <div class="container">
+          <div class="ask-questions__inner">
+            <div class="ask-questions__banner visible-only-desktop">
+              <picture class="ask-questions__picture">
+                <source type="image/webp" srcset="img/airplane-model@1x.webp 1x, img/airplane-model@2x.webp 2x">
+                <img class="ask-questions__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/airplane-model@1x.png" srcset="img/airplane-model@2x.png 2x" width="510" height="285" alt="Макет самолёта.">
+              </picture>
+            </div>
+            <div class="ask-questions__form-wrapper">
+              <h3 class="ask-questions__title">
+                Остались вопросы? Задайте их&nbsp;нам!
+              </h3>
+              <p class="ask-questions__text">
+                Мы&nbsp;проконсультируем Вас бесплатно
+              </p>
+              <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="name">Ваше имя</label>
+                <input class="main-form__input" type="text" name="name" placeholder="Имя" id="name" required>
+                <label class="visually-hidden" for="phone">Ваш номер телефона</label>
+                <input class="main-form__input" type="tel" id="phone" name="phone" data-tel-input placeholder="Телефон" required>
+                <label class="visually-hidden" for="question">Ваш вопрос</label>
+                <textarea class="main-form__input main-form__input--textarea" id="question" name="question" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+                <button class="main-form__button" type="submit">Задать вопрос</button>
+                <input class="main-form__checkbox visually-hidden" type="checkbox" id="agreement" name="agreement" required tabindex="0">
+                <label class="main-form__checkbox-label" for="agreement" accesskey="5">
+                  Я&nbsp;согласен на&nbsp;обработку персональных данных
+                </label>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
