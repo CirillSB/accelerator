@@ -440,24 +440,31 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Закажите звонок</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
+        <h5 class="modal__title">
+          Закажите звонок
+        </h5>
+        <p class="modal__description">
+          Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время
+        </p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal tabindex="6">
+          <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="popup-name">Ваше имя</label>
-          <input class="main-form__input popup-form__inpun" type="text" name="name" placeholder="Имя" id="popup-name" required>
+          <input class="popup-form__input" type="text" name="name" placeholder="Имя" id="popup-name" required tabindex="1">
           <label class="visually-hidden" for="popup-phone">Ваш номер телефона</label>
-          <input class="main-form__input popup-form__inpun" type="tel" name="phone" data-tel-input placeholder="Телефон" id="popup-phone" required>
+          <input class="popup-form__input" type="tel" name="phone" data-tel-input placeholder="Телефон" id="popup-phone" required tabindex="2">
           <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
-          <textarea class="main-form__input popup-form__inpun main-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" required></textarea>
-          <button class="main-form__button popup-form__button" type="submit">отправить</button>
-          <input class="main-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required>
-          <label class="main-form__checkbox-label" for="popup-agreement" tabindex="0">
-            Я&nbsp;согласен на&nbsp;обработку персональных данных
-          </label>
+          <textarea class="popup-form__input popup-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" tabindex="3"></textarea>
+          <button class="popup-form__button" type="submit" tabindex="5">отправить</button>
+          <div class="popup-form__checkbox-wrapper">
+            <input class="popup-form__checkbox" type="checkbox" id="popup-agreement" name="agreement" required tabindex="4">
+            <label class="popup-form__checkbox-label" for="popup-agreement">
+              Я&nbsp;согласен на&nbsp;обработку персональных данных
+            </label>
+          </div>
         </form>
       </div>
     </div>

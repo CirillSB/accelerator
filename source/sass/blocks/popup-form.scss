@@ -1,22 +1,94 @@
 .popup-form {
-  gap: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 20px;
 }
 
-.popup-form__inpun {
+.popup-form__input {
   width: 100%;
-  margin-bottom: 15px;
+  padding: 13px 15px 15px;
+  background: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+  font-family: $ff-text;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+
+  &::placeholder {
+    font-family: $ff-text;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+  }
 
   &:last-child {
     margin: 0;
+  }
+
+  &--textarea {
+    padding: 23px 15px 1px;
   }
 }
 
 .popup-form__button {
   width: 100%;
-  margin-bottom: 20px;
+  color: $color-default-white;
+  background: $BlackPearl;
+  border: none;
+  border-radius: 3px;
+  font-family: $ff-title;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 13px;
+  margin: 5px 0 0;
+}
+
+.popup-form__checkbox {
+  appearance: none;
+}
+
+.popup-form__checkbox-label {
+  position: relative;
+  top: -4px;
+  margin: 0;
+  font-family: $ff-text;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+    min-width: 15px;
+    height: 15px;
+    margin-right: 2px;
+  }
+
+  &::after {
+    width: 8px;
+    height: 3px;
+    transform: rotate(-45deg);
+    border-left: 2px solid $color-default-white;
+    border-bottom: 2px solid $color-default-white;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+  }
+}
+
+.popup-form__checkbox:checked + .popup-form__checkbox-label::after {
+  content: "";
+}
+
+.popup-form__checkbox:focus:not(:checked) + .popup-form__checkbox-label::before {
+  outline: 3px solid $color-default-white;
 }

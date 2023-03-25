@@ -1,6 +1,3 @@
-// import {
-//   applyFocusVisiblePolyfill
-// } from '../vendor/focus-visible-polyfill';
 export const initModalFeedback = () => {
   if (window.matchMedia('(min-width: 1024px)').matches) {
     const body = document.querySelector('body');
@@ -44,6 +41,5 @@ export const initModalFeedback = () => {
     };
 
     buttonOpenModal.addEventListener('click', showModal);
-    // applyFocusVisiblePolyfill();
   }
 };
