@@ -47,6 +47,10 @@
   text-transform: uppercase;
   padding: 13px;
   margin: 5px 0 0;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .popup-form__checkbox {
@@ -62,9 +66,13 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
 
   &::before {
     content: "";
+    position: relative;
+    top: 3px;
     display: inline-block;
     border: 1px solid $color-default-white;
     border-radius: 2px;
@@ -80,7 +88,7 @@
     border-left: 2px solid $color-default-white;
     border-bottom: 2px solid $color-default-white;
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 4px;
   }
 }
@@ -89,6 +97,6 @@
   content: "";
 }
 
-.popup-form__checkbox:focus:not(:checked) + .popup-form__checkbox-label::before {
+.popup-form__checkbox:focus + .popup-form__checkbox-label {
   outline: 3px solid $color-default-white;
 }

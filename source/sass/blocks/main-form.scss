@@ -74,6 +74,8 @@
   padding: 13px 0;
   margin-top: 14px;
   width: 96.5%;
+  grid-column: 1 / 2;
+  grid-row: -1 / -2;
 
   &:hover {
     color: $BlackPearl;
@@ -104,6 +106,8 @@
   opacity: 0.8;
   display: flex;
   align-items: center;
+  grid-column: -2 / -1;
+  grid-row: -1 / -2;
 
   @include vp-1023 {
     top: 10px;
@@ -149,10 +153,10 @@
   appearance: none;
 }
 
-.main-form__checkbox:checked + .main-form__checkbox-label::after {
+.main-form__checkbox:checked+.main-form__checkbox-label::after {
   content: "";
 }
 
-.main-form__checkbox:focus:not(:checked) + .main-form__checkbox-label::before {
+.main-form__checkbox:focus:not(:checked)+.main-form__checkbox-label::before {
   outline: 3px solid $color-default-white;
 }

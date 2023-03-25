@@ -734,6 +734,7 @@ main {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 26%;
+  min-width: 480px;
   padding: 38px 40px 36px;
   background-color: #00b3ff;
 }
@@ -1305,7 +1306,7 @@ main {
   min-height: 120px;
   background: -o-linear-gradient(#041427 100px, #041427, transparent);
   background: linear-gradient(#041427 100px, #041427, transparent);
-  z-index: 100;
+  z-index: 150;
 }
 
 .main-header__inner {
@@ -1845,6 +1846,7 @@ main {
   padding: 13px 51px;
   border: 1px solid #00b3ff;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .about-company__button:hover {
@@ -2037,6 +2039,10 @@ main {
   padding: 13px 0;
   margin-top: 14px;
   width: 96.5%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  grid-row: -1/-2;
 }
 
 .main-form__button:hover {
@@ -2060,6 +2066,8 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  grid-column: -2/-1;
+  grid-row: -1/-2;
 }
 
 .main-form__checkbox-label::before {
@@ -2179,6 +2187,11 @@ main {
   text-transform: uppercase;
   padding: 13px;
   margin: 5px 0 0;
+  cursor: pointer;
+}
+
+.popup-form__button:hover {
+  opacity: 0.8;
 }
 
 .popup-form__checkbox {
@@ -2196,10 +2209,14 @@ main {
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
 }
 
 .popup-form__checkbox-label::before {
   content: "";
+  position: relative;
+  top: 3px;
   display: inline-block;
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -2217,7 +2234,7 @@ main {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 4px;
 }
 
@@ -2225,7 +2242,7 @@ main {
   content: "";
 }
 
-.popup-form__checkbox:focus:not(:checked) + .popup-form__checkbox-label::before {
+.popup-form__checkbox:focus + .popup-form__checkbox-label {
   outline: 3px solid #ffffff;
 }
 
@@ -2368,6 +2385,9 @@ main {
   }
 
   .main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
     min-height: 100px;
     background: -o-linear-gradient(#041427 70px, #041427, transparent);
     background: linear-gradient(#041427 70px, #041427, transparent);

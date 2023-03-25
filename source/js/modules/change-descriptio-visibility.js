@@ -23,7 +23,16 @@ export const changeDescriptionVisibility = () => {
     });
   };
 
+  const changeText = () => {
+    if (showingTextButton.textContent !== 'Свернуть') {
+      showingTextButton.textContent = 'Свернуть';
+    } else {
+      showingTextButton.textContent = 'Подробнее';
+    }
+  };
+
   showingTextButton.addEventListener('pointerdown', () => {
     changeTextVisibility();
+    changeText();
   });
 };
