@@ -60,7 +60,8 @@
 
 .popup-form__checkbox-label {
   position: relative;
-  top: -4px;
+  top: -24px;
+  left: 11px;
   margin: 0;
   font-family: $ff-text;
   font-size: 14px;
@@ -89,7 +90,7 @@
     border-left: 2px solid $color-default-white;
     border-bottom: 2px solid $color-default-white;
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: 4px;
   }
 }
@@ -98,6 +99,6 @@
   content: "";
 }
 
-.popup-form__checkbox:focus + .popup-form__checkbox-label {
+.popup-form__checkbox:focus:not(:checked) + .popup-form__checkbox-label {
   outline: 3px solid $color-default-white;
 }

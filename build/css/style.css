@@ -735,7 +735,7 @@ main {
   transform: translateX(-50%);
   width: 26%;
   min-width: 480px;
-  padding: 38px 40px 36px;
+  padding: 38px 40px 20px;
   background-color: #00b3ff;
 }
 
@@ -2213,7 +2213,8 @@ main {
 
 .popup-form__checkbox-label {
   position: relative;
-  top: -4px;
+  top: -24px;
+  left: 11px;
   margin: 0;
   font-family: "PTMono", "Arial", sans-serif;
   font-size: 14px;
@@ -2245,7 +2246,7 @@ main {
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 4px;
 }
 
@@ -2253,7 +2254,7 @@ main {
   content: "";
 }
 
-.popup-form__checkbox:focus + .popup-form__checkbox-label {
+.popup-form__checkbox:focus:not(:checked) + .popup-form__checkbox-label {
   outline: 3px solid #ffffff;
 }
 
