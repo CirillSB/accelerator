@@ -57,6 +57,11 @@
 
 .offer__image {
   width: 100%;
+
+  @include vp-767 {
+    max-height: 250px;
+    object-fit: cover;
+  }
 }
 
 .offer:hover .offer__title {

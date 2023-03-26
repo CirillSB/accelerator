@@ -2913,6 +2913,12 @@ main {
     height: 40px;
   }
 
+  .offer__image {
+    max-height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .visible-only-mobile {
     display: inline-block;
   }
