@@ -1,6 +1,6 @@
 .goods-services {
   background-color: $BlackPearl;
-  padding: 66px 0 140px;
+  padding: 66px 0 110px;
 
   @include vp-1023 {
     padding: 55px 0 75px;
@@ -35,6 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     flex-direction: column;
@@ -46,10 +47,10 @@
   display: inline-block;
   width: calc(350 / 1220 * 100%);
   background-color: $BlackPearl;
+  margin-bottom: 30px;
 
   @include vp-1023 {
     width: 100%;
-    margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 0;

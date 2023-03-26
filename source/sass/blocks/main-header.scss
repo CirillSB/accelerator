@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 27px 5% 33px 0;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     padding: 20px 0 25px;
@@ -50,6 +51,7 @@
   border: 1px solid $AthensGray;
   border-radius: 3px;
   padding: 10px 15px;
+  flex-shrink: 0;
 
   &:hover {
     color: $color-default-black;

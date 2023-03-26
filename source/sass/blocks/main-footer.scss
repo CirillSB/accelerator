@@ -53,6 +53,7 @@
 .main-footer__sections {
   width: 40%;
   margin-left: -11px;
+  flex-shrink: 0;
 
   @include vp-1023 {
     width: 100%;
@@ -66,6 +67,7 @@
 
 .main-footer__contacts {
   width: 28%;
+  flex-shrink: 0;
 
   @include vp-1023 {
     width: 100%;

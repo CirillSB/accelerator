@@ -10,12 +10,12 @@
     font-size: 22px;
     line-height: 34px;
     color: $AthensGray;
-    margin: 0 0 64px;
+    margin: 0 0 48px;
     width: 70%;
 
     @include vp-1023 {
       width: 100%;
-      margin: 0 0 73px;
+      margin: 0 0 57px;
     }
 
     @include vp-767 {
@@ -79,12 +79,12 @@
   min-width: 870px;
   max-width: 970px;
   margin: 0 auto;
-  padding: 305px 0 295px;
+  padding: 305px 0 280px;
 
   @include vp-1023 {
     width: 87%;
     min-width: 670px;
-    padding: 180px 0 220px;
+    padding: 180px 0 207px;
   }
 
   @include vp-767 {
@@ -118,6 +118,7 @@
 }
 
 .promo__link {
+  display: inline-block;
   background-color: $DeepSkyBlue;
   padding: 17px 25px;
   border-radius: 3px;
@@ -129,6 +130,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $AthensGray;
+  text-align: center;
 
   &:hover {
     background-color: $AthensGray;

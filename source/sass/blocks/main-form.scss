@@ -59,6 +59,8 @@
 }
 
 .main-form__button {
+  display: inline-block;
+  text-align: center;
   background-color: $BlackPearl;
   border-radius: 3px;
   border: none;
