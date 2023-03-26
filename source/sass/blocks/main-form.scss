@@ -1,4 +1,5 @@
 .main-form {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
@@ -97,6 +98,22 @@
   }
 }
 
+.main-form__checkbox {
+  appearance: none;
+  position: absolute;
+  top: 95%;
+  left: 55.5%;
+
+  @include vp-1023 {
+    left: 53.5%;
+  }
+
+  @include vp-767 {
+    top: 100%;
+    left: 4.5%;
+  }
+}
+
 .main-form__checkbox-label {
   position: relative;
   top: 14px;
@@ -156,10 +173,6 @@
       top: 36%;
     }
   }
-}
-
-.main-form__checkbox {
-  appearance: none;
 }
 
 .main-form__checkbox:checked + .main-form__checkbox-label::after {

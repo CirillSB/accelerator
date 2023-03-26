@@ -1965,6 +1965,7 @@ main {
 }
 
 .main-form {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2057,6 +2058,15 @@ main {
   background-color: #ffffff;
 }
 
+.main-form__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 95%;
+  left: 55.5%;
+}
+
 .main-form__checkbox-label {
   position: relative;
   top: 14px;
@@ -2098,12 +2108,6 @@ main {
   position: absolute;
   top: 46%;
   left: 4px;
-}
-
-.main-form__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .main-form__checkbox:checked + .main-form__checkbox-label::after {
@@ -2634,6 +2638,10 @@ main {
     width: 83%;
   }
 
+  .main-form__checkbox {
+    left: 53.5%;
+  }
+
   .main-form__checkbox-label {
     top: 10px;
     left: 0;
@@ -2979,6 +2987,11 @@ main {
     width: 100%;
     grid-column: 1/-1;
     grid-row: -3/-2;
+  }
+
+  .main-form__checkbox {
+    top: 100%;
+    left: 4.5%;
   }
 
   .main-form__checkbox-label {
