@@ -2056,6 +2056,7 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   grid-row: -1/-2;
+  cursor: pointer;
 }
 
 .main-form__button:hover {
@@ -2090,6 +2091,7 @@ main {
   align-items: center;
   grid-column: -2/-1;
   grid-row: -1/-2;
+  cursor: pointer;
 }
 
 .main-form__checkbox-label::before {
@@ -2119,7 +2121,7 @@ main {
   content: "";
 }
 
-.main-form__checkbox:focus:not(:checked) + .main-form__checkbox-label::before {
+.main-form__checkbox:focus + .main-form__checkbox-label {
   outline: 3px solid #ffffff;
 }
 

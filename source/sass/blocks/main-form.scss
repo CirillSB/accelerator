@@ -77,6 +77,7 @@
   width: 96.5%;
   grid-column: 1 / 2;
   grid-row: -1 / -2;
+  cursor: pointer;
 
   &:hover {
     color: $BlackPearl;
@@ -128,6 +129,7 @@
   align-items: center;
   grid-column: -2 / -1;
   grid-row: -1 / -2;
+  cursor: pointer;
 
   @include vp-1023 {
     top: 10px;
@@ -179,6 +181,6 @@
   content: "";
 }
 
-.main-form__checkbox:focus:not(:checked) + .main-form__checkbox-label::before {
+.main-form__checkbox:focus + .main-form__checkbox-label {
   outline: 3px solid $color-default-white;
 }
