@@ -490,7 +490,7 @@
     </footer>
   </div>
   <!-- Модалки -->
-  <div class="modal modal--preload" id="feedback" data-modal="feedback">
+  <div class="modal modal--preload" id="feedback" data-modal="feedback" aria-modal>
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -500,23 +500,30 @@
         <p class="modal__description">
           Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в&nbsp;удобное время
         </p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal tabindex="6">
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal data-focusable-element tabindex="6">
           <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+
           <label class="visually-hidden" for="popup-name">Ваше имя</label>
-          <input class="popup-form__input" type="text" name="name" placeholder="Имя" id="popup-name" required tabindex="1">
+          <input class="popup-form__input" type="text" name="name" placeholder="Имя" id="popup-name" required data-focusable-element tabindex="1">
+
           <label class="visually-hidden" for="popup-phone">Ваш номер телефона</label>
-          <input class="popup-form__input" type="tel" name="phone" data-tel-input placeholder="Телефон" id="popup-phone" required tabindex="2">
+          <input class="popup-form__input" type="tel" name="phone" data-tel-input data-focusable-element placeholder="Телефон" id="popup-phone" required tabindex="2">
+
+          
+          <textarea class="popup-form__input popup-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" data-focusable-element tabindex="3"></textarea>
           <label class="visually-hidden" for="popup-question">Ваш вопрос</label>
-          <textarea class="popup-form__input popup-form__input--textarea" id="popup-question" name="question" cols="30" rows="6" placeholder="Ваш вопрос" tabindex="3"></textarea>
-          <button class="popup-form__button" type="submit" tabindex="5">отправить</button>
-          <input class="popup-form__checkbox" type="checkbox" id="popup-agreement" name="popup-agreement" required tabindex="4">
+
+          <button class="popup-form__button" type="submit" data-focusable-element tabindex="5">отправить</button>
+
+          <input class="popup-form__checkbox" type="checkbox" id="popup-agreement" name="popup-agreement" required data-focusable-element tabindex="4">
           <label class="popup-form__checkbox-label" for="popup-agreement">
             Я&nbsp;согласен на&nbsp;обработку персональных данных
           </label>
+
         </form>
       </div>
     </div>
