@@ -1,11 +1,10 @@
 .navigation__list {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   list-style-type: none;
-  margin: 0;
-  padding: 0 5% 0 6%;
-  flex-shrink: 1;
+  margin: 0 0 0 8px;
+  padding: 0;
+  flex-wrap: wrap;
 
   @include vp-1023 {
     justify-content: flex-end;
@@ -21,17 +20,20 @@
 }
 
 .navigation__item {
+  flex-shrink: 0;
+  margin-left: 108px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
   @include vp-1023 {
     display: inline-block;
-    margin-right: 14px;
+    margin: 0 0 0 26px;
     padding: 0;
-
-    &:last-child {
-      margin: 0;
-    }
   }
 
   @include vp-767 {
-    margin-right: 26px;
+    margin: 0 0 0 40px;
   }
 }
